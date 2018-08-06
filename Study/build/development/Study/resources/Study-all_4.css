@@ -1,0 +1,2017 @@
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/css-outline.scss:58 */
+.x-ie8 .x-panel-header-navigation .x-tool-focus {
+    outline: none;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/css-outline.scss:40 */
+.x-ie8 .x-panel-header-navigation .x-tool-focus:after {
+    position: absolute;
+    content: ' ';
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    border: 1px dotted #464646;
+    pointer-events: none;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:842 */
+.x-rtl.x-panel-header-navigation-collapsed-border-right {
+    border-right-width: 1px !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:845 */
+.x-rtl.x-panel-header-navigation-collapsed-border-left {
+    border-left-width: 1px !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:859 */
+.x-panel-navigation-resizable .x-panel-handle {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    opacity: 0;
+}
+/* C:/Sencha/workspace/Study/sass/src/view/main/Main.scss:60 */
+.x-title-icon-navigation {
+    font-family: FontAwesome;
+    color: #fff;
+    font-size: 24px;
+    line-height: 24px;
+}
+/* C:/Sencha/workspace/Study/sass/src/view/main/Main.scss:67 */
+.x-tab-icon-el-navigation {
+    font-family: FontAwesome;
+    color: #acacac;
+}
+/* C:/Sencha/workspace/Study/sass/src/view/main/Main.scss:71 */
+.x-tab-over .x-tab-icon-el-navigation {
+    color: #c4c4c4;
+}
+/* C:/Sencha/workspace/Study/sass/src/view/main/Main.scss:75 */
+.x-tab-active .x-tab-icon-el-navigation {
+    color: #fff;
+}
+/* C:/Sencha/workspace/Study/sass/src/view/main/Main.scss:80 */
+.x-panel-header-title-navigation > .x-title-text-navigation:after {
+    top: 30px;
+    right: -24px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:187 */
+.x-tab-navigation-top {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    padding: 24px 24px 24px 24px;
+    border-width: 0;
+    border-style: solid;
+    background-color: transparent;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
+.x-tab-navigation-top-mc {
+    background-color: transparent;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
+.x-nbr .x-tab-navigation-top {
+    padding: 0 !important;
+    border-width: 0 !important;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:281 */
+.x-tab-navigation-top-frameInfo {
+    font-family: th-0-0-0-0-0-0-0-0-24-24-24-24;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:347 */
+.x-tab-navigation-top-tl {
+    background-position: 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:351 */
+.x-tab-navigation-top-tr {
+    background-position: right 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:355 */
+.x-tab-navigation-top-bl {
+    background-position: 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:359 */
+.x-tab-navigation-top-br {
+    background-position: right 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:363 */
+.x-tab-navigation-top-ml {
+    background-position: 0 top;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:371 */
+.x-tab-navigation-top-mr {
+    background-position: right top;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:379 */
+.x-tab-navigation-top-tc {
+    background-position: 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:383 */
+.x-tab-navigation-top-bc {
+    background-position: 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:388 */
+.x-tab-navigation-top-tr,
+.x-tab-navigation-top-br,
+.x-tab-navigation-top-mr {
+    padding-right: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:394 */
+.x-tab-navigation-top-tl,
+.x-tab-navigation-top-bl,
+.x-tab-navigation-top-ml {
+    padding-left: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:400 */
+.x-tab-navigation-top-tc {
+    height: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:403 */
+.x-tab-navigation-top-bc {
+    height: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:464 */
+.x-tab-navigation-top-mc {
+    padding: 24px 24px 24px 24px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-navigation-top:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, frame:0 0 0 0, stretch:bottom, frame:0 0 0 0, stretch:bottom, frame:0 0 0 0, stretch:bottom, frame:0 0 0 0" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:187 */
+.x-tab-navigation-bottom {
+    -moz-border-radius-topleft: 0;
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 24px 24px 24px 24px;
+    border-width: 0 0 0 0;
+    border-style: solid;
+    background-color: transparent;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
+.x-tab-navigation-bottom-mc {
+    background-color: transparent;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
+.x-nbr .x-tab-navigation-bottom {
+    padding: 0 !important;
+    border-width: 0 !important;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:281 */
+.x-tab-navigation-bottom-frameInfo {
+    font-family: th-0-0-0-0-0-0-0-0-24-24-24-24;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:347 */
+.x-tab-navigation-bottom-tl {
+    background-position: 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:351 */
+.x-tab-navigation-bottom-tr {
+    background-position: right 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:355 */
+.x-tab-navigation-bottom-bl {
+    background-position: 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:359 */
+.x-tab-navigation-bottom-br {
+    background-position: right 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:363 */
+.x-tab-navigation-bottom-ml {
+    background-position: 0 bottom;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:371 */
+.x-tab-navigation-bottom-mr {
+    background-position: right bottom;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:379 */
+.x-tab-navigation-bottom-tc {
+    background-position: 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:383 */
+.x-tab-navigation-bottom-bc {
+    background-position: 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:388 */
+.x-tab-navigation-bottom-tr,
+.x-tab-navigation-bottom-br,
+.x-tab-navigation-bottom-mr {
+    padding-right: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:394 */
+.x-tab-navigation-bottom-tl,
+.x-tab-navigation-bottom-bl,
+.x-tab-navigation-bottom-ml {
+    padding-left: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:400 */
+.x-tab-navigation-bottom-tc {
+    height: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:403 */
+.x-tab-navigation-bottom-bc {
+    height: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:464 */
+.x-tab-navigation-bottom-mc {
+    padding: 24px 24px 24px 24px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-navigation-bottom:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, frame:0 0 0 0, stretch:top, frame:0 0 0 0, stretch:top, frame:0 0 0 0, stretch:top, frame:0 0 0 0" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:187 */
+.x-tab-navigation-left {
+    -moz-border-radius-topleft: 0;
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 24px 24px 24px 24px;
+    border-width: 0 0 0 0;
+    border-style: solid;
+    background-color: transparent;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
+.x-tab-navigation-left-mc {
+    background-color: transparent;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
+.x-nbr .x-tab-navigation-left {
+    padding: 0 !important;
+    border-width: 0 !important;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:281 */
+.x-tab-navigation-left-frameInfo {
+    font-family: th-0-0-0-0-0-0-0-0-24-24-24-24;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:347 */
+.x-tab-navigation-left-tl {
+    background-position: 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:351 */
+.x-tab-navigation-left-tr {
+    background-position: right 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:355 */
+.x-tab-navigation-left-bl {
+    background-position: 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:359 */
+.x-tab-navigation-left-br {
+    background-position: right 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:363 */
+.x-tab-navigation-left-ml {
+    background-position: 0 top;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:371 */
+.x-tab-navigation-left-mr {
+    background-position: right top;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:379 */
+.x-tab-navigation-left-tc {
+    background-position: 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:383 */
+.x-tab-navigation-left-bc {
+    background-position: 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:388 */
+.x-tab-navigation-left-tr,
+.x-tab-navigation-left-br,
+.x-tab-navigation-left-mr {
+    padding-right: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:394 */
+.x-tab-navigation-left-tl,
+.x-tab-navigation-left-bl,
+.x-tab-navigation-left-ml {
+    padding-left: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:400 */
+.x-tab-navigation-left-tc {
+    height: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:403 */
+.x-tab-navigation-left-bc {
+    height: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:464 */
+.x-tab-navigation-left-mc {
+    padding: 24px 24px 24px 24px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-navigation-left:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, frame:0 0 0 0, stretch:right, frame:0 0 0 0, stretch:right, frame:0 0 0 0, stretch:right, frame:0 0 0 0" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:187 */
+.x-tab-navigation-right {
+    -moz-border-radius-topleft: 0;
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 24px 24px 24px 24px;
+    border-width: 0 0 0 0;
+    border-style: solid;
+    background-color: transparent;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
+.x-tab-navigation-right-mc {
+    background-color: transparent;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
+.x-nbr .x-tab-navigation-right {
+    padding: 0 !important;
+    border-width: 0 !important;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:281 */
+.x-tab-navigation-right-frameInfo {
+    font-family: th-0-0-0-0-0-0-0-0-24-24-24-24;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:347 */
+.x-tab-navigation-right-tl {
+    background-position: 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:351 */
+.x-tab-navigation-right-tr {
+    background-position: right 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:355 */
+.x-tab-navigation-right-bl {
+    background-position: 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:359 */
+.x-tab-navigation-right-br {
+    background-position: right 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:363 */
+.x-tab-navigation-right-ml {
+    background-position: 0 top;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:371 */
+.x-tab-navigation-right-mr {
+    background-position: right top;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:379 */
+.x-tab-navigation-right-tc {
+    background-position: 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:383 */
+.x-tab-navigation-right-bc {
+    background-position: 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:388 */
+.x-tab-navigation-right-tr,
+.x-tab-navigation-right-br,
+.x-tab-navigation-right-mr {
+    padding-right: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:394 */
+.x-tab-navigation-right-tl,
+.x-tab-navigation-right-bl,
+.x-tab-navigation-right-ml {
+    padding-left: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:400 */
+.x-tab-navigation-right-tc {
+    height: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:403 */
+.x-tab-navigation-right-bc {
+    height: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/frame.scss:464 */
+.x-tab-navigation-right-mc {
+    padding: 24px 24px 24px 24px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-navigation-right:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, frame:0 0 0 0, stretch:left, frame:0 0 0 0, stretch:left, frame:0 0 0 0, stretch:left, frame:0 0 0 0" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:1597 */
+.x-tab-navigation {
+    border-color: #8db3e3;
+    cursor: pointer;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:1656 */
+.x-tab-navigation-top {
+    margin: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:1660 */
+.x-tab-navigation-top.x-rtl {
+    margin: 0 0 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:1665 */
+.x-tab-navigation-top.x-tab-rotate-left {
+    margin: 0 0 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:1669 */
+.x-tab-navigation-top.x-tab-rotate-left.x-rtl {
+    margin: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:1687 */
+.x-tab-navigation-top.x-tab-focus {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:1700 */
+.x-tab-navigation-top.x-tab-over {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:1729 */
+.x-tab-navigation-top.x-tab.x-tab-active {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:1758 */
+.x-tab-navigation-top.x-tab.x-tab-disabled {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:1771 */
+.x-tab-navigation-right {
+    margin: 0 0 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:1775 */
+.x-tab-navigation-right.x-rtl {
+    margin: 0 0 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:1780 */
+.x-tab-navigation-right.x-tab-rotate-right {
+    margin: 0 0 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:1784 */
+.x-tab-navigation-right.x-tab-rotate-right.x-rtl {
+    margin: 0 0 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:1802 */
+.x-tab-navigation-right.x-tab-focus {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:1815 */
+.x-tab-navigation-right.x-tab-over {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:1844 */
+.x-tab-navigation-right.x-tab.x-tab-active {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:1873 */
+.x-tab-navigation-right.x-tab.x-tab-disabled {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:1886 */
+.x-tab-navigation-bottom {
+    margin: 0 0 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:1890 */
+.x-tab-navigation-bottom.x-rtl {
+    margin: 0 0 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:1895 */
+.x-tab-navigation-bottom.x-tab-rotate-left {
+    margin: 0 0 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:1899 */
+.x-tab-navigation-bottom.x-tab-rotate-left.x-rtl {
+    margin: 0 0 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:1917 */
+.x-tab-navigation-bottom.x-tab-focus {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:1930 */
+.x-tab-navigation-bottom.x-tab-over {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:1959 */
+.x-tab-navigation-bottom.x-tab.x-tab-active {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:1988 */
+.x-tab-navigation-bottom.x-tab.x-tab-disabled {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2001 */
+.x-tab-navigation-left {
+    margin: 0 0 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2005 */
+.x-tab-navigation-left.x-rtl {
+    margin: 0 0 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2010 */
+.x-tab-navigation-left.x-tab-rotate-right {
+    margin: 0 0 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2014 */
+.x-tab-navigation-left.x-tab-rotate-right.x-rtl {
+    margin: 0 0 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2032 */
+.x-tab-navigation-left.x-tab-focus {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2045 */
+.x-tab-navigation-left.x-tab-over {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2074 */
+.x-tab-navigation-left.x-tab.x-tab-active {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2103 */
+.x-tab-navigation-left.x-tab.x-tab-disabled {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2116 */
+.x-tab-button-navigation {
+    height: 24px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2121 */
+.x-tab-inner-navigation {
+    font: bold 15px/19px tahoma, arial, verdana, sans-serif;
+    color: #acacac;
+    max-width: 100%;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2137 */
+.x-tab-icon-right > .x-tab-inner-navigation,
+.x-tab-icon-left > .x-tab-inner-navigation {
+    max-width: calc(100% - 24px);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2145 */
+.x-tab-icon-el-navigation {
+    min-height: 24px;
+    background-position: center center;
+    font-size: 24px;
+    line-height: 24px;
+    color: #acacac;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2146 */
+.x-tab-icon-left > .x-tab-icon-el-navigation,
+.x-tab-icon-right > .x-tab-icon-el-navigation {
+    width: 24px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2151 */
+.x-tab-icon-top > .x-tab-icon-el-navigation,
+.x-tab-icon-bottom > .x-tab-icon-el-navigation {
+    min-width: 24px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2187 */
+.x-tab-text.x-tab-icon-left > .x-tab-icon-el-navigation {
+    margin-right: 5px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2191 */
+.x-tab-text.x-tab-icon-left > .x-tab-icon-el-navigation.x-rtl {
+    margin-right: 0;
+    margin-left: 5px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2198 */
+.x-tab-text.x-tab-icon-right > .x-tab-icon-el-navigation {
+    margin-left: 5px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2202 */
+.x-tab-text.x-tab-icon-right > .x-tab-icon-el-navigation.x-rtl {
+    margin-left: 0;
+    margin-right: 5px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2209 */
+.x-tab-text.x-tab-icon-top > .x-tab-icon-el-navigation {
+    margin-bottom: 5px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2213 */
+.x-tab-text.x-tab-icon-bottom > .x-tab-icon-el-navigation {
+    margin-top: 5px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2218 */
+.x-tab-focus.x-tab-navigation {
+    border-color: #8db3e3;
+    background-color: transparent;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2284 */
+.x-tab-focus.x-tab-navigation .x-tab-button:before {
+    position: absolute;
+    content: ' ';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    outline: 1px dotted #416da3;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2301 */
+.x-tab-focus.x-tab-navigation.x-tab-closable .x-tab-button:before {
+    right: 14px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2354 */
+.x-tab-over.x-tab-navigation {
+    border-color: #8db3e3;
+    background-color: #505050;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2410 */
+.x-tab-over.x-tab-navigation .x-tab-inner-navigation {
+    color: #c4c4c4;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2430 */
+.x-tab-over.x-tab-navigation .x-tab-icon-el {
+    color: #c4c4c4;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2439 */
+.x-ie8m .x-tab-over.x-tab-navigation .x-tab-icon-el {
+    color: #c4c4c4;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2466 */
+.x-tab-focus.x-tab-over.x-tab-navigation {
+    border-color: #8db3e3;
+    background-color: #505050;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2581 */
+.x-tab.x-tab-active.x-tab-navigation {
+    border-color: #8db3e3;
+    background-color: #303030;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2637 */
+.x-tab.x-tab-active.x-tab-navigation .x-tab-inner-navigation {
+    color: #fff;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2657 */
+.x-tab.x-tab-active.x-tab-navigation .x-tab-icon-el {
+    color: #fff;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2665 */
+.x-ie8 .x-tab.x-tab-active.x-tab-navigation .x-tab-icon-el {
+    color: #fff;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2692 */
+.x-tab-focus.x-tab-active.x-tab-navigation {
+    border-color: #8db3e3;
+    background-color: #303030;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2808 */
+.x-tab.x-tab-disabled.x-tab-navigation {
+    border-color: #bbd2ef;
+    background-color: transparent;
+    cursor: default;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2892 */
+.x-tab.x-tab-disabled.x-tab-navigation .x-tab-icon-el-navigation {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    opacity: 0.5;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2897 */
+.x-tab.x-tab-disabled.x-tab-navigation .x-tab-icon-el {
+    color: #acacac;
+    opacity: 0.3;
+    filter: none;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2938 */
+.x-nbr .x-tab-navigation {
+    background-image: none;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2957 */
+.x-tab-over .x-tab-navigation-top-tl,
+.x-tab-over .x-tab-navigation-top-bl,
+.x-tab-over .x-tab-navigation-top-tr,
+.x-tab-over .x-tab-navigation-top-br,
+.x-tab-over .x-tab-navigation-top-tc,
+.x-tab-over .x-tab-navigation-top-bc {
+    background-image: url(images/tab/tab-navigation-top-over-corners.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2966 */
+.x-tab-over .x-tab-navigation-top-ml,
+.x-tab-over .x-tab-navigation-top-mr {
+    background-image: url(images/tab/tab-navigation-top-over-sides.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2971 */
+.x-tab-over .x-tab-navigation-top-mc {
+    background-repeat: repeat-x;
+    background-image: url(images/tab/tab-navigation-top-over-fbg.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2957 */
+.x-tab-focus .x-tab-navigation-top-tl,
+.x-tab-focus .x-tab-navigation-top-bl,
+.x-tab-focus .x-tab-navigation-top-tr,
+.x-tab-focus .x-tab-navigation-top-br,
+.x-tab-focus .x-tab-navigation-top-tc,
+.x-tab-focus .x-tab-navigation-top-bc {
+    background-image: url(images/tab/tab-navigation-top-focus-corners.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2966 */
+.x-tab-focus .x-tab-navigation-top-ml,
+.x-tab-focus .x-tab-navigation-top-mr {
+    background-image: url(images/tab/tab-navigation-top-focus-sides.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2971 */
+.x-tab-focus .x-tab-navigation-top-mc {
+    background-repeat: repeat-x;
+    background-image: url(images/tab/tab-navigation-top-focus-fbg.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2957 */
+.x-tab-focus.x-tab-over .x-tab-navigation-top-tl,
+.x-tab-focus.x-tab-over .x-tab-navigation-top-bl,
+.x-tab-focus.x-tab-over .x-tab-navigation-top-tr,
+.x-tab-focus.x-tab-over .x-tab-navigation-top-br,
+.x-tab-focus.x-tab-over .x-tab-navigation-top-tc,
+.x-tab-focus.x-tab-over .x-tab-navigation-top-bc {
+    background-image: url(images/tab/tab-navigation-top-focus-over-corners.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2966 */
+.x-tab-focus.x-tab-over .x-tab-navigation-top-ml,
+.x-tab-focus.x-tab-over .x-tab-navigation-top-mr {
+    background-image: url(images/tab/tab-navigation-top-focus-over-sides.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2971 */
+.x-tab-focus.x-tab-over .x-tab-navigation-top-mc {
+    background-repeat: repeat-x;
+    background-image: url(images/tab/tab-navigation-top-focus-over-fbg.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2957 */
+.x-tab.x-tab-active .x-tab-navigation-top-tl,
+.x-tab.x-tab-active .x-tab-navigation-top-bl,
+.x-tab.x-tab-active .x-tab-navigation-top-tr,
+.x-tab.x-tab-active .x-tab-navigation-top-br,
+.x-tab.x-tab-active .x-tab-navigation-top-tc,
+.x-tab.x-tab-active .x-tab-navigation-top-bc {
+    background-image: url(images/tab/tab-navigation-top-active-corners.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2966 */
+.x-tab.x-tab-active .x-tab-navigation-top-ml,
+.x-tab.x-tab-active .x-tab-navigation-top-mr {
+    background-image: url(images/tab/tab-navigation-top-active-sides.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2971 */
+.x-tab.x-tab-active .x-tab-navigation-top-mc {
+    background-repeat: repeat-x;
+    background-image: url(images/tab/tab-navigation-top-active-fbg.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2957 */
+.x-tab-focus.x-tab-active .x-tab-navigation-top-tl,
+.x-tab-focus.x-tab-active .x-tab-navigation-top-bl,
+.x-tab-focus.x-tab-active .x-tab-navigation-top-tr,
+.x-tab-focus.x-tab-active .x-tab-navigation-top-br,
+.x-tab-focus.x-tab-active .x-tab-navigation-top-tc,
+.x-tab-focus.x-tab-active .x-tab-navigation-top-bc {
+    background-image: url(images/tab/tab-navigation-top-focus-active-corners.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2966 */
+.x-tab-focus.x-tab-active .x-tab-navigation-top-ml,
+.x-tab-focus.x-tab-active .x-tab-navigation-top-mr {
+    background-image: url(images/tab/tab-navigation-top-focus-active-sides.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2971 */
+.x-tab-focus.x-tab-active .x-tab-navigation-top-mc {
+    background-repeat: repeat-x;
+    background-image: url(images/tab/tab-navigation-top-focus-active-fbg.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2957 */
+.x-tab.x-tab-disabled .x-tab-navigation-top-tl,
+.x-tab.x-tab-disabled .x-tab-navigation-top-bl,
+.x-tab.x-tab-disabled .x-tab-navigation-top-tr,
+.x-tab.x-tab-disabled .x-tab-navigation-top-br,
+.x-tab.x-tab-disabled .x-tab-navigation-top-tc,
+.x-tab.x-tab-disabled .x-tab-navigation-top-bc {
+    background-image: url(images/tab/tab-navigation-top-disabled-corners.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2966 */
+.x-tab.x-tab-disabled .x-tab-navigation-top-ml,
+.x-tab.x-tab-disabled .x-tab-navigation-top-mr {
+    background-image: url(images/tab/tab-navigation-top-disabled-sides.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2971 */
+.x-tab.x-tab-disabled .x-tab-navigation-top-mc {
+    background-repeat: repeat-x;
+    background-image: url(images/tab/tab-navigation-top-disabled-fbg.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2957 */
+.x-tab-over .x-tab-navigation-right-tl,
+.x-tab-over .x-tab-navigation-right-bl,
+.x-tab-over .x-tab-navigation-right-tr,
+.x-tab-over .x-tab-navigation-right-br,
+.x-tab-over .x-tab-navigation-right-tc,
+.x-tab-over .x-tab-navigation-right-bc {
+    background-image: url(images/tab/tab-navigation-right-over-corners.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2966 */
+.x-tab-over .x-tab-navigation-right-ml,
+.x-tab-over .x-tab-navigation-right-mr {
+    background-image: url(images/tab/tab-navigation-right-over-sides.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2971 */
+.x-tab-over .x-tab-navigation-right-mc {
+    background-repeat: repeat-x;
+    background-image: url(images/tab/tab-navigation-right-over-fbg.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2957 */
+.x-tab-focus .x-tab-navigation-right-tl,
+.x-tab-focus .x-tab-navigation-right-bl,
+.x-tab-focus .x-tab-navigation-right-tr,
+.x-tab-focus .x-tab-navigation-right-br,
+.x-tab-focus .x-tab-navigation-right-tc,
+.x-tab-focus .x-tab-navigation-right-bc {
+    background-image: url(images/tab/tab-navigation-right-focus-corners.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2966 */
+.x-tab-focus .x-tab-navigation-right-ml,
+.x-tab-focus .x-tab-navigation-right-mr {
+    background-image: url(images/tab/tab-navigation-right-focus-sides.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2971 */
+.x-tab-focus .x-tab-navigation-right-mc {
+    background-repeat: repeat-x;
+    background-image: url(images/tab/tab-navigation-right-focus-fbg.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2957 */
+.x-tab-focus.x-tab-over .x-tab-navigation-right-tl,
+.x-tab-focus.x-tab-over .x-tab-navigation-right-bl,
+.x-tab-focus.x-tab-over .x-tab-navigation-right-tr,
+.x-tab-focus.x-tab-over .x-tab-navigation-right-br,
+.x-tab-focus.x-tab-over .x-tab-navigation-right-tc,
+.x-tab-focus.x-tab-over .x-tab-navigation-right-bc {
+    background-image: url(images/tab/tab-navigation-right-focus-over-corners.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2966 */
+.x-tab-focus.x-tab-over .x-tab-navigation-right-ml,
+.x-tab-focus.x-tab-over .x-tab-navigation-right-mr {
+    background-image: url(images/tab/tab-navigation-right-focus-over-sides.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2971 */
+.x-tab-focus.x-tab-over .x-tab-navigation-right-mc {
+    background-repeat: repeat-x;
+    background-image: url(images/tab/tab-navigation-right-focus-over-fbg.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2957 */
+.x-tab.x-tab-active .x-tab-navigation-right-tl,
+.x-tab.x-tab-active .x-tab-navigation-right-bl,
+.x-tab.x-tab-active .x-tab-navigation-right-tr,
+.x-tab.x-tab-active .x-tab-navigation-right-br,
+.x-tab.x-tab-active .x-tab-navigation-right-tc,
+.x-tab.x-tab-active .x-tab-navigation-right-bc {
+    background-image: url(images/tab/tab-navigation-right-active-corners.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2966 */
+.x-tab.x-tab-active .x-tab-navigation-right-ml,
+.x-tab.x-tab-active .x-tab-navigation-right-mr {
+    background-image: url(images/tab/tab-navigation-right-active-sides.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2971 */
+.x-tab.x-tab-active .x-tab-navigation-right-mc {
+    background-repeat: repeat-x;
+    background-image: url(images/tab/tab-navigation-right-active-fbg.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2957 */
+.x-tab-focus.x-tab-active .x-tab-navigation-right-tl,
+.x-tab-focus.x-tab-active .x-tab-navigation-right-bl,
+.x-tab-focus.x-tab-active .x-tab-navigation-right-tr,
+.x-tab-focus.x-tab-active .x-tab-navigation-right-br,
+.x-tab-focus.x-tab-active .x-tab-navigation-right-tc,
+.x-tab-focus.x-tab-active .x-tab-navigation-right-bc {
+    background-image: url(images/tab/tab-navigation-right-focus-active-corners.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2966 */
+.x-tab-focus.x-tab-active .x-tab-navigation-right-ml,
+.x-tab-focus.x-tab-active .x-tab-navigation-right-mr {
+    background-image: url(images/tab/tab-navigation-right-focus-active-sides.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2971 */
+.x-tab-focus.x-tab-active .x-tab-navigation-right-mc {
+    background-repeat: repeat-x;
+    background-image: url(images/tab/tab-navigation-right-focus-active-fbg.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2957 */
+.x-tab.x-tab-disabled .x-tab-navigation-right-tl,
+.x-tab.x-tab-disabled .x-tab-navigation-right-bl,
+.x-tab.x-tab-disabled .x-tab-navigation-right-tr,
+.x-tab.x-tab-disabled .x-tab-navigation-right-br,
+.x-tab.x-tab-disabled .x-tab-navigation-right-tc,
+.x-tab.x-tab-disabled .x-tab-navigation-right-bc {
+    background-image: url(images/tab/tab-navigation-right-disabled-corners.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2966 */
+.x-tab.x-tab-disabled .x-tab-navigation-right-ml,
+.x-tab.x-tab-disabled .x-tab-navigation-right-mr {
+    background-image: url(images/tab/tab-navigation-right-disabled-sides.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2971 */
+.x-tab.x-tab-disabled .x-tab-navigation-right-mc {
+    background-repeat: repeat-x;
+    background-image: url(images/tab/tab-navigation-right-disabled-fbg.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2957 */
+.x-tab-over .x-tab-navigation-bottom-tl,
+.x-tab-over .x-tab-navigation-bottom-bl,
+.x-tab-over .x-tab-navigation-bottom-tr,
+.x-tab-over .x-tab-navigation-bottom-br,
+.x-tab-over .x-tab-navigation-bottom-tc,
+.x-tab-over .x-tab-navigation-bottom-bc {
+    background-image: url(images/tab/tab-navigation-bottom-over-corners.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2966 */
+.x-tab-over .x-tab-navigation-bottom-ml,
+.x-tab-over .x-tab-navigation-bottom-mr {
+    background-image: url(images/tab/tab-navigation-bottom-over-sides.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2971 */
+.x-tab-over .x-tab-navigation-bottom-mc {
+    background-repeat: repeat-x;
+    background-image: url(images/tab/tab-navigation-bottom-over-fbg.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2957 */
+.x-tab-focus .x-tab-navigation-bottom-tl,
+.x-tab-focus .x-tab-navigation-bottom-bl,
+.x-tab-focus .x-tab-navigation-bottom-tr,
+.x-tab-focus .x-tab-navigation-bottom-br,
+.x-tab-focus .x-tab-navigation-bottom-tc,
+.x-tab-focus .x-tab-navigation-bottom-bc {
+    background-image: url(images/tab/tab-navigation-bottom-focus-corners.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2966 */
+.x-tab-focus .x-tab-navigation-bottom-ml,
+.x-tab-focus .x-tab-navigation-bottom-mr {
+    background-image: url(images/tab/tab-navigation-bottom-focus-sides.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2971 */
+.x-tab-focus .x-tab-navigation-bottom-mc {
+    background-repeat: repeat-x;
+    background-image: url(images/tab/tab-navigation-bottom-focus-fbg.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2957 */
+.x-tab-focus.x-tab-over .x-tab-navigation-bottom-tl,
+.x-tab-focus.x-tab-over .x-tab-navigation-bottom-bl,
+.x-tab-focus.x-tab-over .x-tab-navigation-bottom-tr,
+.x-tab-focus.x-tab-over .x-tab-navigation-bottom-br,
+.x-tab-focus.x-tab-over .x-tab-navigation-bottom-tc,
+.x-tab-focus.x-tab-over .x-tab-navigation-bottom-bc {
+    background-image: url(images/tab/tab-navigation-bottom-focus-over-corners.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2966 */
+.x-tab-focus.x-tab-over .x-tab-navigation-bottom-ml,
+.x-tab-focus.x-tab-over .x-tab-navigation-bottom-mr {
+    background-image: url(images/tab/tab-navigation-bottom-focus-over-sides.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2971 */
+.x-tab-focus.x-tab-over .x-tab-navigation-bottom-mc {
+    background-repeat: repeat-x;
+    background-image: url(images/tab/tab-navigation-bottom-focus-over-fbg.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2957 */
+.x-tab.x-tab-active .x-tab-navigation-bottom-tl,
+.x-tab.x-tab-active .x-tab-navigation-bottom-bl,
+.x-tab.x-tab-active .x-tab-navigation-bottom-tr,
+.x-tab.x-tab-active .x-tab-navigation-bottom-br,
+.x-tab.x-tab-active .x-tab-navigation-bottom-tc,
+.x-tab.x-tab-active .x-tab-navigation-bottom-bc {
+    background-image: url(images/tab/tab-navigation-bottom-active-corners.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2966 */
+.x-tab.x-tab-active .x-tab-navigation-bottom-ml,
+.x-tab.x-tab-active .x-tab-navigation-bottom-mr {
+    background-image: url(images/tab/tab-navigation-bottom-active-sides.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2971 */
+.x-tab.x-tab-active .x-tab-navigation-bottom-mc {
+    background-repeat: repeat-x;
+    background-image: url(images/tab/tab-navigation-bottom-active-fbg.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2957 */
+.x-tab-focus.x-tab-active .x-tab-navigation-bottom-tl,
+.x-tab-focus.x-tab-active .x-tab-navigation-bottom-bl,
+.x-tab-focus.x-tab-active .x-tab-navigation-bottom-tr,
+.x-tab-focus.x-tab-active .x-tab-navigation-bottom-br,
+.x-tab-focus.x-tab-active .x-tab-navigation-bottom-tc,
+.x-tab-focus.x-tab-active .x-tab-navigation-bottom-bc {
+    background-image: url(images/tab/tab-navigation-bottom-focus-active-corners.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2966 */
+.x-tab-focus.x-tab-active .x-tab-navigation-bottom-ml,
+.x-tab-focus.x-tab-active .x-tab-navigation-bottom-mr {
+    background-image: url(images/tab/tab-navigation-bottom-focus-active-sides.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2971 */
+.x-tab-focus.x-tab-active .x-tab-navigation-bottom-mc {
+    background-repeat: repeat-x;
+    background-image: url(images/tab/tab-navigation-bottom-focus-active-fbg.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2957 */
+.x-tab.x-tab-disabled .x-tab-navigation-bottom-tl,
+.x-tab.x-tab-disabled .x-tab-navigation-bottom-bl,
+.x-tab.x-tab-disabled .x-tab-navigation-bottom-tr,
+.x-tab.x-tab-disabled .x-tab-navigation-bottom-br,
+.x-tab.x-tab-disabled .x-tab-navigation-bottom-tc,
+.x-tab.x-tab-disabled .x-tab-navigation-bottom-bc {
+    background-image: url(images/tab/tab-navigation-bottom-disabled-corners.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2966 */
+.x-tab.x-tab-disabled .x-tab-navigation-bottom-ml,
+.x-tab.x-tab-disabled .x-tab-navigation-bottom-mr {
+    background-image: url(images/tab/tab-navigation-bottom-disabled-sides.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2971 */
+.x-tab.x-tab-disabled .x-tab-navigation-bottom-mc {
+    background-repeat: repeat-x;
+    background-image: url(images/tab/tab-navigation-bottom-disabled-fbg.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2957 */
+.x-tab-over .x-tab-navigation-left-tl,
+.x-tab-over .x-tab-navigation-left-bl,
+.x-tab-over .x-tab-navigation-left-tr,
+.x-tab-over .x-tab-navigation-left-br,
+.x-tab-over .x-tab-navigation-left-tc,
+.x-tab-over .x-tab-navigation-left-bc {
+    background-image: url(images/tab/tab-navigation-left-over-corners.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2966 */
+.x-tab-over .x-tab-navigation-left-ml,
+.x-tab-over .x-tab-navigation-left-mr {
+    background-image: url(images/tab/tab-navigation-left-over-sides.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2971 */
+.x-tab-over .x-tab-navigation-left-mc {
+    background-repeat: repeat-x;
+    background-image: url(images/tab/tab-navigation-left-over-fbg.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2957 */
+.x-tab-focus .x-tab-navigation-left-tl,
+.x-tab-focus .x-tab-navigation-left-bl,
+.x-tab-focus .x-tab-navigation-left-tr,
+.x-tab-focus .x-tab-navigation-left-br,
+.x-tab-focus .x-tab-navigation-left-tc,
+.x-tab-focus .x-tab-navigation-left-bc {
+    background-image: url(images/tab/tab-navigation-left-focus-corners.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2966 */
+.x-tab-focus .x-tab-navigation-left-ml,
+.x-tab-focus .x-tab-navigation-left-mr {
+    background-image: url(images/tab/tab-navigation-left-focus-sides.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2971 */
+.x-tab-focus .x-tab-navigation-left-mc {
+    background-repeat: repeat-x;
+    background-image: url(images/tab/tab-navigation-left-focus-fbg.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2957 */
+.x-tab-focus.x-tab-over .x-tab-navigation-left-tl,
+.x-tab-focus.x-tab-over .x-tab-navigation-left-bl,
+.x-tab-focus.x-tab-over .x-tab-navigation-left-tr,
+.x-tab-focus.x-tab-over .x-tab-navigation-left-br,
+.x-tab-focus.x-tab-over .x-tab-navigation-left-tc,
+.x-tab-focus.x-tab-over .x-tab-navigation-left-bc {
+    background-image: url(images/tab/tab-navigation-left-focus-over-corners.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2966 */
+.x-tab-focus.x-tab-over .x-tab-navigation-left-ml,
+.x-tab-focus.x-tab-over .x-tab-navigation-left-mr {
+    background-image: url(images/tab/tab-navigation-left-focus-over-sides.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2971 */
+.x-tab-focus.x-tab-over .x-tab-navigation-left-mc {
+    background-repeat: repeat-x;
+    background-image: url(images/tab/tab-navigation-left-focus-over-fbg.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2957 */
+.x-tab.x-tab-active .x-tab-navigation-left-tl,
+.x-tab.x-tab-active .x-tab-navigation-left-bl,
+.x-tab.x-tab-active .x-tab-navigation-left-tr,
+.x-tab.x-tab-active .x-tab-navigation-left-br,
+.x-tab.x-tab-active .x-tab-navigation-left-tc,
+.x-tab.x-tab-active .x-tab-navigation-left-bc {
+    background-image: url(images/tab/tab-navigation-left-active-corners.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2966 */
+.x-tab.x-tab-active .x-tab-navigation-left-ml,
+.x-tab.x-tab-active .x-tab-navigation-left-mr {
+    background-image: url(images/tab/tab-navigation-left-active-sides.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2971 */
+.x-tab.x-tab-active .x-tab-navigation-left-mc {
+    background-repeat: repeat-x;
+    background-image: url(images/tab/tab-navigation-left-active-fbg.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2957 */
+.x-tab-focus.x-tab-active .x-tab-navigation-left-tl,
+.x-tab-focus.x-tab-active .x-tab-navigation-left-bl,
+.x-tab-focus.x-tab-active .x-tab-navigation-left-tr,
+.x-tab-focus.x-tab-active .x-tab-navigation-left-br,
+.x-tab-focus.x-tab-active .x-tab-navigation-left-tc,
+.x-tab-focus.x-tab-active .x-tab-navigation-left-bc {
+    background-image: url(images/tab/tab-navigation-left-focus-active-corners.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2966 */
+.x-tab-focus.x-tab-active .x-tab-navigation-left-ml,
+.x-tab-focus.x-tab-active .x-tab-navigation-left-mr {
+    background-image: url(images/tab/tab-navigation-left-focus-active-sides.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2971 */
+.x-tab-focus.x-tab-active .x-tab-navigation-left-mc {
+    background-repeat: repeat-x;
+    background-image: url(images/tab/tab-navigation-left-focus-active-fbg.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2957 */
+.x-tab.x-tab-disabled .x-tab-navigation-left-tl,
+.x-tab.x-tab-disabled .x-tab-navigation-left-bl,
+.x-tab.x-tab-disabled .x-tab-navigation-left-tr,
+.x-tab.x-tab-disabled .x-tab-navigation-left-br,
+.x-tab.x-tab-disabled .x-tab-navigation-left-tc,
+.x-tab.x-tab-disabled .x-tab-navigation-left-bc {
+    background-image: url(images/tab/tab-navigation-left-disabled-corners.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2966 */
+.x-tab.x-tab-disabled .x-tab-navigation-left-ml,
+.x-tab.x-tab-disabled .x-tab-navigation-left-mr {
+    background-image: url(images/tab/tab-navigation-left-disabled-sides.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2971 */
+.x-tab.x-tab-disabled .x-tab-navigation-left-mc {
+    background-repeat: repeat-x;
+    background-image: url(images/tab/tab-navigation-left-disabled-fbg.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2981 */
+.x-tab-navigation-tl,
+.x-tab-navigation-bl,
+.x-tab-navigation-tr,
+.x-tab-navigation-br {
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2991 */
+.x-tab-navigation .x-tab-close-btn {
+    top: 2px;
+    right: 2px;
+    width: 11px;
+    height: 11px;
+    background: url(images/tab/tab-navigation-close.gif) 0 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    opacity: 0.6;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:3013 */
+.x-tab-navigation .x-tab-close-btn-over {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    opacity: 1;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:3082 */
+.x-tab-navigation.x-tab-active .x-tab-close-btn {
+    background-position: 0 -11px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:3115 */
+.x-tab-navigation.x-tab-disabled .x-tab-close-btn {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    opacity: 0.3;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:3136 */
+.x-rtl.x-tab-navigation .x-tab-close-btn {
+    right: auto;
+    left: 2px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:3142 */
+.x-tab-closable.x-tab-navigation .x-tab-button {
+    padding-right: 14px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Tab.scss:3147 */
+.x-rtl.x-tab-closable.x-tab-navigation .x-tab-button {
+    padding-right: 0px;
+    padding-left: 14px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-focus.x-tab-navigation-top:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-navigation-top-focus-corners.gif), sides:url(images/tab/tab-navigation-top-focus-sides.gif), frame-bg:url(images/tab/tab-navigation-top-focus-fbg.gif), frame:0 0 0 0, stretch:bottom, corners:url(images/tab/tab-navigation-top-focus-corners.gif), sides:url(images/tab/tab-navigation-top-focus-sides.gif), frame-bg:url(images/tab/tab-navigation-top-focus-fbg.gif), frame:0 0 0 0, stretch:bottom, corners:url(images/tab/tab-navigation-top-focus-corners.gif), sides:url(images/tab/tab-navigation-top-focus-sides.gif), frame-bg:url(images/tab/tab-navigation-top-focus-fbg.gif), frame:0 0 0 0, stretch:bottom, corners:url(images/tab/tab-navigation-top-focus-corners.gif), sides:url(images/tab/tab-navigation-top-focus-sides.gif), frame-bg:url(images/tab/tab-navigation-top-focus-fbg.gif), frame:0 0 0 0, stretch:bottom" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-focus.x-tab-navigation-right:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-navigation-right-focus-corners.gif), sides:url(images/tab/tab-navigation-right-focus-sides.gif), frame-bg:url(images/tab/tab-navigation-right-focus-fbg.gif), frame:0 0 0 0, stretch:left, corners:url(images/tab/tab-navigation-right-focus-corners.gif), sides:url(images/tab/tab-navigation-right-focus-sides.gif), frame-bg:url(images/tab/tab-navigation-right-focus-fbg.gif), frame:0 0 0 0, stretch:left, corners:url(images/tab/tab-navigation-right-focus-corners.gif), sides:url(images/tab/tab-navigation-right-focus-sides.gif), frame-bg:url(images/tab/tab-navigation-right-focus-fbg.gif), frame:0 0 0 0, stretch:left, corners:url(images/tab/tab-navigation-right-focus-corners.gif), sides:url(images/tab/tab-navigation-right-focus-sides.gif), frame-bg:url(images/tab/tab-navigation-right-focus-fbg.gif), frame:0 0 0 0, stretch:left" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-focus.x-tab-navigation-bottom:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-navigation-bottom-focus-corners.gif), sides:url(images/tab/tab-navigation-bottom-focus-sides.gif), frame-bg:url(images/tab/tab-navigation-bottom-focus-fbg.gif), frame:0 0 0 0, stretch:top, corners:url(images/tab/tab-navigation-bottom-focus-corners.gif), sides:url(images/tab/tab-navigation-bottom-focus-sides.gif), frame-bg:url(images/tab/tab-navigation-bottom-focus-fbg.gif), frame:0 0 0 0, stretch:top, corners:url(images/tab/tab-navigation-bottom-focus-corners.gif), sides:url(images/tab/tab-navigation-bottom-focus-sides.gif), frame-bg:url(images/tab/tab-navigation-bottom-focus-fbg.gif), frame:0 0 0 0, stretch:top, corners:url(images/tab/tab-navigation-bottom-focus-corners.gif), sides:url(images/tab/tab-navigation-bottom-focus-sides.gif), frame-bg:url(images/tab/tab-navigation-bottom-focus-fbg.gif), frame:0 0 0 0, stretch:top" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-focus.x-tab-navigation-left:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-navigation-left-focus-corners.gif), sides:url(images/tab/tab-navigation-left-focus-sides.gif), frame-bg:url(images/tab/tab-navigation-left-focus-fbg.gif), frame:0 0 0 0, stretch:right, corners:url(images/tab/tab-navigation-left-focus-corners.gif), sides:url(images/tab/tab-navigation-left-focus-sides.gif), frame-bg:url(images/tab/tab-navigation-left-focus-fbg.gif), frame:0 0 0 0, stretch:right, corners:url(images/tab/tab-navigation-left-focus-corners.gif), sides:url(images/tab/tab-navigation-left-focus-sides.gif), frame-bg:url(images/tab/tab-navigation-left-focus-fbg.gif), frame:0 0 0 0, stretch:right, corners:url(images/tab/tab-navigation-left-focus-corners.gif), sides:url(images/tab/tab-navigation-left-focus-sides.gif), frame-bg:url(images/tab/tab-navigation-left-focus-fbg.gif), frame:0 0 0 0, stretch:right" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-over.x-tab-navigation-top:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-navigation-top-over-corners.gif), sides:url(images/tab/tab-navigation-top-over-sides.gif), frame-bg:url(images/tab/tab-navigation-top-over-fbg.gif), frame:0 0 0 0, stretch:bottom, corners:url(images/tab/tab-navigation-top-over-corners.gif), sides:url(images/tab/tab-navigation-top-over-sides.gif), frame-bg:url(images/tab/tab-navigation-top-over-fbg.gif), frame:0 0 0 0, stretch:bottom, corners:url(images/tab/tab-navigation-top-over-corners.gif), sides:url(images/tab/tab-navigation-top-over-sides.gif), frame-bg:url(images/tab/tab-navigation-top-over-fbg.gif), frame:0 0 0 0, stretch:bottom, corners:url(images/tab/tab-navigation-top-over-corners.gif), sides:url(images/tab/tab-navigation-top-over-sides.gif), frame-bg:url(images/tab/tab-navigation-top-over-fbg.gif), frame:0 0 0 0, stretch:bottom" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-over.x-tab-navigation-right:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-navigation-right-over-corners.gif), sides:url(images/tab/tab-navigation-right-over-sides.gif), frame-bg:url(images/tab/tab-navigation-right-over-fbg.gif), frame:0 0 0 0, stretch:left, corners:url(images/tab/tab-navigation-right-over-corners.gif), sides:url(images/tab/tab-navigation-right-over-sides.gif), frame-bg:url(images/tab/tab-navigation-right-over-fbg.gif), frame:0 0 0 0, stretch:left, corners:url(images/tab/tab-navigation-right-over-corners.gif), sides:url(images/tab/tab-navigation-right-over-sides.gif), frame-bg:url(images/tab/tab-navigation-right-over-fbg.gif), frame:0 0 0 0, stretch:left, corners:url(images/tab/tab-navigation-right-over-corners.gif), sides:url(images/tab/tab-navigation-right-over-sides.gif), frame-bg:url(images/tab/tab-navigation-right-over-fbg.gif), frame:0 0 0 0, stretch:left" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-over.x-tab-navigation-bottom:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-navigation-bottom-over-corners.gif), sides:url(images/tab/tab-navigation-bottom-over-sides.gif), frame-bg:url(images/tab/tab-navigation-bottom-over-fbg.gif), frame:0 0 0 0, stretch:top, corners:url(images/tab/tab-navigation-bottom-over-corners.gif), sides:url(images/tab/tab-navigation-bottom-over-sides.gif), frame-bg:url(images/tab/tab-navigation-bottom-over-fbg.gif), frame:0 0 0 0, stretch:top, corners:url(images/tab/tab-navigation-bottom-over-corners.gif), sides:url(images/tab/tab-navigation-bottom-over-sides.gif), frame-bg:url(images/tab/tab-navigation-bottom-over-fbg.gif), frame:0 0 0 0, stretch:top, corners:url(images/tab/tab-navigation-bottom-over-corners.gif), sides:url(images/tab/tab-navigation-bottom-over-sides.gif), frame-bg:url(images/tab/tab-navigation-bottom-over-fbg.gif), frame:0 0 0 0, stretch:top" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-over.x-tab-navigation-left:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-navigation-left-over-corners.gif), sides:url(images/tab/tab-navigation-left-over-sides.gif), frame-bg:url(images/tab/tab-navigation-left-over-fbg.gif), frame:0 0 0 0, stretch:right, corners:url(images/tab/tab-navigation-left-over-corners.gif), sides:url(images/tab/tab-navigation-left-over-sides.gif), frame-bg:url(images/tab/tab-navigation-left-over-fbg.gif), frame:0 0 0 0, stretch:right, corners:url(images/tab/tab-navigation-left-over-corners.gif), sides:url(images/tab/tab-navigation-left-over-sides.gif), frame-bg:url(images/tab/tab-navigation-left-over-fbg.gif), frame:0 0 0 0, stretch:right, corners:url(images/tab/tab-navigation-left-over-corners.gif), sides:url(images/tab/tab-navigation-left-over-sides.gif), frame-bg:url(images/tab/tab-navigation-left-over-fbg.gif), frame:0 0 0 0, stretch:right" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-active.x-tab-navigation-top:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-navigation-top-active-corners.gif), sides:url(images/tab/tab-navigation-top-active-sides.gif), frame-bg:url(images/tab/tab-navigation-top-active-fbg.gif), frame:0 0 0 0, stretch:bottom, corners:url(images/tab/tab-navigation-top-active-corners.gif), sides:url(images/tab/tab-navigation-top-active-sides.gif), frame-bg:url(images/tab/tab-navigation-top-active-fbg.gif), frame:0 0 0 0, stretch:bottom, corners:url(images/tab/tab-navigation-top-active-corners.gif), sides:url(images/tab/tab-navigation-top-active-sides.gif), frame-bg:url(images/tab/tab-navigation-top-active-fbg.gif), frame:0 0 0 0, stretch:bottom, corners:url(images/tab/tab-navigation-top-active-corners.gif), sides:url(images/tab/tab-navigation-top-active-sides.gif), frame-bg:url(images/tab/tab-navigation-top-active-fbg.gif), frame:0 0 0 0, stretch:bottom" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-active.x-tab-navigation-right:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-navigation-right-active-corners.gif), sides:url(images/tab/tab-navigation-right-active-sides.gif), frame-bg:url(images/tab/tab-navigation-right-active-fbg.gif), frame:0 0 0 0, stretch:left, corners:url(images/tab/tab-navigation-right-active-corners.gif), sides:url(images/tab/tab-navigation-right-active-sides.gif), frame-bg:url(images/tab/tab-navigation-right-active-fbg.gif), frame:0 0 0 0, stretch:left, corners:url(images/tab/tab-navigation-right-active-corners.gif), sides:url(images/tab/tab-navigation-right-active-sides.gif), frame-bg:url(images/tab/tab-navigation-right-active-fbg.gif), frame:0 0 0 0, stretch:left, corners:url(images/tab/tab-navigation-right-active-corners.gif), sides:url(images/tab/tab-navigation-right-active-sides.gif), frame-bg:url(images/tab/tab-navigation-right-active-fbg.gif), frame:0 0 0 0, stretch:left" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-active.x-tab-navigation-bottom:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-navigation-bottom-active-corners.gif), sides:url(images/tab/tab-navigation-bottom-active-sides.gif), frame-bg:url(images/tab/tab-navigation-bottom-active-fbg.gif), frame:0 0 0 0, stretch:top, corners:url(images/tab/tab-navigation-bottom-active-corners.gif), sides:url(images/tab/tab-navigation-bottom-active-sides.gif), frame-bg:url(images/tab/tab-navigation-bottom-active-fbg.gif), frame:0 0 0 0, stretch:top, corners:url(images/tab/tab-navigation-bottom-active-corners.gif), sides:url(images/tab/tab-navigation-bottom-active-sides.gif), frame-bg:url(images/tab/tab-navigation-bottom-active-fbg.gif), frame:0 0 0 0, stretch:top, corners:url(images/tab/tab-navigation-bottom-active-corners.gif), sides:url(images/tab/tab-navigation-bottom-active-sides.gif), frame-bg:url(images/tab/tab-navigation-bottom-active-fbg.gif), frame:0 0 0 0, stretch:top" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-active.x-tab-navigation-left:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-navigation-left-active-corners.gif), sides:url(images/tab/tab-navigation-left-active-sides.gif), frame-bg:url(images/tab/tab-navigation-left-active-fbg.gif), frame:0 0 0 0, stretch:right, corners:url(images/tab/tab-navigation-left-active-corners.gif), sides:url(images/tab/tab-navigation-left-active-sides.gif), frame-bg:url(images/tab/tab-navigation-left-active-fbg.gif), frame:0 0 0 0, stretch:right, corners:url(images/tab/tab-navigation-left-active-corners.gif), sides:url(images/tab/tab-navigation-left-active-sides.gif), frame-bg:url(images/tab/tab-navigation-left-active-fbg.gif), frame:0 0 0 0, stretch:right, corners:url(images/tab/tab-navigation-left-active-corners.gif), sides:url(images/tab/tab-navigation-left-active-sides.gif), frame-bg:url(images/tab/tab-navigation-left-active-fbg.gif), frame:0 0 0 0, stretch:right" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-focus.x-tab-over.x-tab-navigation-top:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-navigation-top-focus-over-corners.gif), sides:url(images/tab/tab-navigation-top-focus-over-sides.gif), frame-bg:url(images/tab/tab-navigation-top-focus-over-fbg.gif), frame:0 0 0 0, stretch:bottom, corners:url(images/tab/tab-navigation-top-focus-over-corners.gif), sides:url(images/tab/tab-navigation-top-focus-over-sides.gif), frame-bg:url(images/tab/tab-navigation-top-focus-over-fbg.gif), frame:0 0 0 0, stretch:bottom, corners:url(images/tab/tab-navigation-top-focus-over-corners.gif), sides:url(images/tab/tab-navigation-top-focus-over-sides.gif), frame-bg:url(images/tab/tab-navigation-top-focus-over-fbg.gif), frame:0 0 0 0, stretch:bottom, corners:url(images/tab/tab-navigation-top-focus-over-corners.gif), sides:url(images/tab/tab-navigation-top-focus-over-sides.gif), frame-bg:url(images/tab/tab-navigation-top-focus-over-fbg.gif), frame:0 0 0 0, stretch:bottom" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-focus.x-tab-over.x-tab-navigation-right:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-navigation-right-focus-over-corners.gif), sides:url(images/tab/tab-navigation-right-focus-over-sides.gif), frame-bg:url(images/tab/tab-navigation-right-focus-over-fbg.gif), frame:0 0 0 0, stretch:left, corners:url(images/tab/tab-navigation-right-focus-over-corners.gif), sides:url(images/tab/tab-navigation-right-focus-over-sides.gif), frame-bg:url(images/tab/tab-navigation-right-focus-over-fbg.gif), frame:0 0 0 0, stretch:left, corners:url(images/tab/tab-navigation-right-focus-over-corners.gif), sides:url(images/tab/tab-navigation-right-focus-over-sides.gif), frame-bg:url(images/tab/tab-navigation-right-focus-over-fbg.gif), frame:0 0 0 0, stretch:left, corners:url(images/tab/tab-navigation-right-focus-over-corners.gif), sides:url(images/tab/tab-navigation-right-focus-over-sides.gif), frame-bg:url(images/tab/tab-navigation-right-focus-over-fbg.gif), frame:0 0 0 0, stretch:left" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-focus.x-tab-over.x-tab-navigation-bottom:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-navigation-bottom-focus-over-corners.gif), sides:url(images/tab/tab-navigation-bottom-focus-over-sides.gif), frame-bg:url(images/tab/tab-navigation-bottom-focus-over-fbg.gif), frame:0 0 0 0, stretch:top, corners:url(images/tab/tab-navigation-bottom-focus-over-corners.gif), sides:url(images/tab/tab-navigation-bottom-focus-over-sides.gif), frame-bg:url(images/tab/tab-navigation-bottom-focus-over-fbg.gif), frame:0 0 0 0, stretch:top, corners:url(images/tab/tab-navigation-bottom-focus-over-corners.gif), sides:url(images/tab/tab-navigation-bottom-focus-over-sides.gif), frame-bg:url(images/tab/tab-navigation-bottom-focus-over-fbg.gif), frame:0 0 0 0, stretch:top, corners:url(images/tab/tab-navigation-bottom-focus-over-corners.gif), sides:url(images/tab/tab-navigation-bottom-focus-over-sides.gif), frame-bg:url(images/tab/tab-navigation-bottom-focus-over-fbg.gif), frame:0 0 0 0, stretch:top" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-focus.x-tab-over.x-tab-navigation-left:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-navigation-left-focus-over-corners.gif), sides:url(images/tab/tab-navigation-left-focus-over-sides.gif), frame-bg:url(images/tab/tab-navigation-left-focus-over-fbg.gif), frame:0 0 0 0, stretch:right, corners:url(images/tab/tab-navigation-left-focus-over-corners.gif), sides:url(images/tab/tab-navigation-left-focus-over-sides.gif), frame-bg:url(images/tab/tab-navigation-left-focus-over-fbg.gif), frame:0 0 0 0, stretch:right, corners:url(images/tab/tab-navigation-left-focus-over-corners.gif), sides:url(images/tab/tab-navigation-left-focus-over-sides.gif), frame-bg:url(images/tab/tab-navigation-left-focus-over-fbg.gif), frame:0 0 0 0, stretch:right, corners:url(images/tab/tab-navigation-left-focus-over-corners.gif), sides:url(images/tab/tab-navigation-left-focus-over-sides.gif), frame-bg:url(images/tab/tab-navigation-left-focus-over-fbg.gif), frame:0 0 0 0, stretch:right" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-focus.x-tab-active.x-tab-navigation-top:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-navigation-top-focus-active-corners.gif), sides:url(images/tab/tab-navigation-top-focus-active-sides.gif), frame-bg:url(images/tab/tab-navigation-top-focus-active-fbg.gif), frame:0 0 0 0, stretch:bottom, corners:url(images/tab/tab-navigation-top-focus-active-corners.gif), sides:url(images/tab/tab-navigation-top-focus-active-sides.gif), frame-bg:url(images/tab/tab-navigation-top-focus-active-fbg.gif), frame:0 0 0 0, stretch:bottom, corners:url(images/tab/tab-navigation-top-focus-active-corners.gif), sides:url(images/tab/tab-navigation-top-focus-active-sides.gif), frame-bg:url(images/tab/tab-navigation-top-focus-active-fbg.gif), frame:0 0 0 0, stretch:bottom, corners:url(images/tab/tab-navigation-top-focus-active-corners.gif), sides:url(images/tab/tab-navigation-top-focus-active-sides.gif), frame-bg:url(images/tab/tab-navigation-top-focus-active-fbg.gif), frame:0 0 0 0, stretch:bottom" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-focus.x-tab-active.x-tab-navigation-right:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-navigation-right-focus-active-corners.gif), sides:url(images/tab/tab-navigation-right-focus-active-sides.gif), frame-bg:url(images/tab/tab-navigation-right-focus-active-fbg.gif), frame:0 0 0 0, stretch:left, corners:url(images/tab/tab-navigation-right-focus-active-corners.gif), sides:url(images/tab/tab-navigation-right-focus-active-sides.gif), frame-bg:url(images/tab/tab-navigation-right-focus-active-fbg.gif), frame:0 0 0 0, stretch:left, corners:url(images/tab/tab-navigation-right-focus-active-corners.gif), sides:url(images/tab/tab-navigation-right-focus-active-sides.gif), frame-bg:url(images/tab/tab-navigation-right-focus-active-fbg.gif), frame:0 0 0 0, stretch:left, corners:url(images/tab/tab-navigation-right-focus-active-corners.gif), sides:url(images/tab/tab-navigation-right-focus-active-sides.gif), frame-bg:url(images/tab/tab-navigation-right-focus-active-fbg.gif), frame:0 0 0 0, stretch:left" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-focus.x-tab-active.x-tab-navigation-bottom:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-navigation-bottom-focus-active-corners.gif), sides:url(images/tab/tab-navigation-bottom-focus-active-sides.gif), frame-bg:url(images/tab/tab-navigation-bottom-focus-active-fbg.gif), frame:0 0 0 0, stretch:top, corners:url(images/tab/tab-navigation-bottom-focus-active-corners.gif), sides:url(images/tab/tab-navigation-bottom-focus-active-sides.gif), frame-bg:url(images/tab/tab-navigation-bottom-focus-active-fbg.gif), frame:0 0 0 0, stretch:top, corners:url(images/tab/tab-navigation-bottom-focus-active-corners.gif), sides:url(images/tab/tab-navigation-bottom-focus-active-sides.gif), frame-bg:url(images/tab/tab-navigation-bottom-focus-active-fbg.gif), frame:0 0 0 0, stretch:top, corners:url(images/tab/tab-navigation-bottom-focus-active-corners.gif), sides:url(images/tab/tab-navigation-bottom-focus-active-sides.gif), frame-bg:url(images/tab/tab-navigation-bottom-focus-active-fbg.gif), frame:0 0 0 0, stretch:top" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-focus.x-tab-active.x-tab-navigation-left:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-navigation-left-focus-active-corners.gif), sides:url(images/tab/tab-navigation-left-focus-active-sides.gif), frame-bg:url(images/tab/tab-navigation-left-focus-active-fbg.gif), frame:0 0 0 0, stretch:right, corners:url(images/tab/tab-navigation-left-focus-active-corners.gif), sides:url(images/tab/tab-navigation-left-focus-active-sides.gif), frame-bg:url(images/tab/tab-navigation-left-focus-active-fbg.gif), frame:0 0 0 0, stretch:right, corners:url(images/tab/tab-navigation-left-focus-active-corners.gif), sides:url(images/tab/tab-navigation-left-focus-active-sides.gif), frame-bg:url(images/tab/tab-navigation-left-focus-active-fbg.gif), frame:0 0 0 0, stretch:right, corners:url(images/tab/tab-navigation-left-focus-active-corners.gif), sides:url(images/tab/tab-navigation-left-focus-active-sides.gif), frame-bg:url(images/tab/tab-navigation-left-focus-active-fbg.gif), frame:0 0 0 0, stretch:right" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-disabled.x-tab-navigation-top:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-navigation-top-disabled-corners.gif), sides:url(images/tab/tab-navigation-top-disabled-sides.gif), frame-bg:url(images/tab/tab-navigation-top-disabled-fbg.gif), frame:0 0 0 0, stretch:bottom, corners:url(images/tab/tab-navigation-top-disabled-corners.gif), sides:url(images/tab/tab-navigation-top-disabled-sides.gif), frame-bg:url(images/tab/tab-navigation-top-disabled-fbg.gif), frame:0 0 0 0, stretch:bottom, corners:url(images/tab/tab-navigation-top-disabled-corners.gif), sides:url(images/tab/tab-navigation-top-disabled-sides.gif), frame-bg:url(images/tab/tab-navigation-top-disabled-fbg.gif), frame:0 0 0 0, stretch:bottom, corners:url(images/tab/tab-navigation-top-disabled-corners.gif), sides:url(images/tab/tab-navigation-top-disabled-sides.gif), frame-bg:url(images/tab/tab-navigation-top-disabled-fbg.gif), frame:0 0 0 0, stretch:bottom" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-disabled.x-tab-navigation-right:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-navigation-right-disabled-corners.gif), sides:url(images/tab/tab-navigation-right-disabled-sides.gif), frame-bg:url(images/tab/tab-navigation-right-disabled-fbg.gif), frame:0 0 0 0, stretch:left, corners:url(images/tab/tab-navigation-right-disabled-corners.gif), sides:url(images/tab/tab-navigation-right-disabled-sides.gif), frame-bg:url(images/tab/tab-navigation-right-disabled-fbg.gif), frame:0 0 0 0, stretch:left, corners:url(images/tab/tab-navigation-right-disabled-corners.gif), sides:url(images/tab/tab-navigation-right-disabled-sides.gif), frame-bg:url(images/tab/tab-navigation-right-disabled-fbg.gif), frame:0 0 0 0, stretch:left, corners:url(images/tab/tab-navigation-right-disabled-corners.gif), sides:url(images/tab/tab-navigation-right-disabled-sides.gif), frame-bg:url(images/tab/tab-navigation-right-disabled-fbg.gif), frame:0 0 0 0, stretch:left" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-disabled.x-tab-navigation-bottom:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-navigation-bottom-disabled-corners.gif), sides:url(images/tab/tab-navigation-bottom-disabled-sides.gif), frame-bg:url(images/tab/tab-navigation-bottom-disabled-fbg.gif), frame:0 0 0 0, stretch:top, corners:url(images/tab/tab-navigation-bottom-disabled-corners.gif), sides:url(images/tab/tab-navigation-bottom-disabled-sides.gif), frame-bg:url(images/tab/tab-navigation-bottom-disabled-fbg.gif), frame:0 0 0 0, stretch:top, corners:url(images/tab/tab-navigation-bottom-disabled-corners.gif), sides:url(images/tab/tab-navigation-bottom-disabled-sides.gif), frame-bg:url(images/tab/tab-navigation-bottom-disabled-fbg.gif), frame:0 0 0 0, stretch:top, corners:url(images/tab/tab-navigation-bottom-disabled-corners.gif), sides:url(images/tab/tab-navigation-bottom-disabled-sides.gif), frame-bg:url(images/tab/tab-navigation-bottom-disabled-fbg.gif), frame:0 0 0 0, stretch:top" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-disabled.x-tab-navigation-left:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, corners:url(images/tab/tab-navigation-left-disabled-corners.gif), sides:url(images/tab/tab-navigation-left-disabled-sides.gif), frame-bg:url(images/tab/tab-navigation-left-disabled-fbg.gif), frame:0 0 0 0, stretch:right, corners:url(images/tab/tab-navigation-left-disabled-corners.gif), sides:url(images/tab/tab-navigation-left-disabled-sides.gif), frame-bg:url(images/tab/tab-navigation-left-disabled-fbg.gif), frame:0 0 0 0, stretch:right, corners:url(images/tab/tab-navigation-left-disabled-corners.gif), sides:url(images/tab/tab-navigation-left-disabled-sides.gif), frame-bg:url(images/tab/tab-navigation-left-disabled-fbg.gif), frame:0 0 0 0, stretch:right, corners:url(images/tab/tab-navigation-left-disabled-corners.gif), sides:url(images/tab/tab-navigation-left-disabled-sides.gif), frame-bg:url(images/tab/tab-navigation-left-disabled-fbg.gif), frame:0 0 0 0, stretch:right" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:168 */
+.x-tab-bar-navigation {
+    background-color: #404040;
+    border-style: solid;
+    border-color: #99bce8;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:177 */
+.x-tab-bar-navigation-top {
+    border-width: 1px 1px 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:181 */
+.x-tab-bar-navigation-bottom {
+    border-width: 0 1px 1px 1px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:185 */
+.x-tab-bar-navigation-left {
+    border-width: 1px 0 1px 1px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:190 */
+.x-rtl.x-tab-bar-navigation-left {
+    border-width: 1px 1px 1px 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:195 */
+.x-tab-bar-navigation-right {
+    border-width: 1px 1px 1px 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:200 */
+.x-rtl.x-tab-bar-navigation-right {
+    border-width: 1px 0 1px 1px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:207 */
+.x-tab-bar-navigation-top > .x-tab-bar-body-navigation {
+    padding: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:211 */
+.x-tab-bar-navigation-bottom > .x-tab-bar-body-navigation {
+    padding: 0 0 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:215 */
+.x-tab-bar-navigation-left > .x-tab-bar-body-navigation {
+    padding: 0 0 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:220 */
+.x-rtl.x-tab-bar-navigation-left > .x-tab-bar-body-navigation {
+    padding: 0 0 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:225 */
+.x-tab-bar-navigation-right > .x-tab-bar-body-navigation {
+    padding: 0 0 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:230 */
+.x-rtl.x-tab-bar-navigation-right > .x-tab-bar-body-navigation {
+    padding: 0 0 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:238 */
+.x-tab-bar-plain.x-tab-bar-navigation-top > .x-tab-bar-body-navigation {
+    padding: 1px 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:242 */
+.x-tab-bar-plain.x-tab-bar-navigation-bottom > .x-tab-bar-body-navigation {
+    padding: 0 0 1px 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:246 */
+.x-tab-bar-plain.x-tab-bar-navigation-left > .x-tab-bar-body-navigation {
+    padding: 0 0 0 1px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:251 */
+.x-rtl.x-tab-bar-plain.x-tab-bar-navigation-left > .x-tab-bar-body-navigation {
+    padding: 0 1px 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:256 */
+.x-tab-bar-plain.x-tab-bar-navigation-right > .x-tab-bar-body-navigation {
+    padding: 0 1px 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:261 */
+.x-rtl.x-tab-bar-plain.x-tab-bar-navigation-right > .x-tab-bar-body-navigation {
+    padding: 0 0 0 1px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:269 */
+.x-tab-bar-plain.x-tab-bar-navigation-horizontal {
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-width: 0;
+    border-right-width: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:276 */
+.x-tab-bar-plain.x-tab-bar-navigation-vertical {
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:390 */
+.x-tab-bar-horizontal > .x-tab-bar-body-navigation {
+    min-height: 71px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:393 */
+.x-ie8m .x-tab-bar-horizontal > .x-tab-bar-body-navigation {
+    min-height: 72px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:400 */
+.x-tab-bar-vertical > .x-tab-bar-body-navigation {
+    min-width: 71px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:403 */
+.x-ie8m .x-tab-bar-vertical > .x-tab-bar-body-navigation {
+    min-width: 72px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/layout/container/Box.scss:170 */
+.x-tab-bar-navigation-scroller .x-box-scroller-body-horizontal {
+    margin-left: 18px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/layout/container/Box.scss:175 */
+.x-tab-bar-navigation-scroller.x-rtl .x-box-scroller-body-horizontal {
+    margin-left: 0;
+    margin-right: 18px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/layout/container/Box.scss:183 */
+.x-tab-bar-navigation-vertical-scroller .x-box-scroller-body-vertical {
+    margin-top: 18px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/layout/container/Box.scss:188 */
+.x-box-scroller-tab-bar-navigation {
+    cursor: pointer;
+    color: #eee;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/layout/container/Box.scss:210 */
+.x-box-scroller-tab-bar-navigation.x-box-scroller-disabled {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    opacity: 0.5;
+    cursor: default;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/layout/container/Box.scss:220 */
+.x-box-scroller-tab-bar-navigation.x-box-scroller-left,
+.x-box-scroller-tab-bar-navigation.x-box-scroller-right {
+    width: 18px;
+    top: 0;
+    bottom: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/layout/container/Box.scss:247 */
+.x-box-scroller-tab-bar-navigation.x-box-scroller-left {
+    margin: 0;
+    background-position: -18px 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/layout/container/Box.scss:266 */
+.x-box-scroller-tab-bar-navigation.x-box-scroller-left.x-box-scroller-hover {
+    background-position: 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/layout/container/Box.scss:272 */
+.x-box-scroller-tab-bar-navigation.x-box-scroller-right {
+    margin: 0;
+    background-position: 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/layout/container/Box.scss:291 */
+.x-box-scroller-tab-bar-navigation.x-box-scroller-right.x-box-scroller-hover {
+    background-position: -18px 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/layout/container/Box.scss:299 */
+.x-box-scroller-tab-bar-navigation.x-box-scroller-top,
+.x-box-scroller-tab-bar-navigation.x-box-scroller-bottom {
+    height: 18px;
+    left: 0;
+    right: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/layout/container/Box.scss:326 */
+.x-box-scroller-tab-bar-navigation.x-box-scroller-top {
+    margin: 0;
+    background-position: 0 -18px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/layout/container/Box.scss:345 */
+.x-box-scroller-tab-bar-navigation.x-box-scroller-top.x-box-scroller-hover {
+    background-position: 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/layout/container/Box.scss:351 */
+.x-box-scroller-tab-bar-navigation.x-box-scroller-bottom {
+    margin: 0;
+    background-position: 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/layout/container/Box.scss:370 */
+.x-box-scroller-tab-bar-navigation.x-box-scroller-bottom.x-box-scroller-hover {
+    background-position: 0 -18px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:483 */
+.x-tab-bar-more-icon {
+    background-image: url(images/tab-bar/navigation-more.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:490 */
+.x-tab-bar-more-icon.x-rtl {
+    background-image: url(images/tab-bar/navigation-more-left.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:500 */
+.x-tab-bar-plain.x-tab-bar-navigation-scroller .x-box-scroller-body-horizontal {
+    margin-left: 18px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:506 */
+.x-tab-bar-plain.x-tab-bar-navigation-vertical-scroller .x-box-scroller-body-vertical {
+    margin-top: 17px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:511 */
+.x-tab-bar-plain .x-box-scroller-tab-bar-navigation {
+    color: #eee;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:518 */
+.x-tab-bar-navigation-right .x-box-scroller-top {
+    background-position: right -18px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:521 */
+.x-tab-bar-navigation-right .x-box-scroller-top.x-box-scroller-hover {
+    background-position: right 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:526 */
+.x-tab-bar-navigation-right .x-box-scroller-bottom {
+    background-position: right 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:529 */
+.x-tab-bar-navigation-right .x-box-scroller-bottom.x-box-scroller-hover {
+    background-position: right -18px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:536 */
+.x-tab-bar-navigation-bottom .x-box-scroller-left {
+    background-position: -18px bottom;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:539 */
+.x-tab-bar-navigation-bottom .x-box-scroller-left.x-box-scroller-hover {
+    background-position: 0 bottom;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:544 */
+.x-tab-bar-navigation-bottom .x-box-scroller-right {
+    background-position: 0 bottom;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:547 */
+.x-tab-bar-navigation-bottom .x-box-scroller-right.x-box-scroller-hover {
+    background-position: -18px bottom;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:580 */
+.x-box-scroller-tab-bar-navigation {
+    background-color: #404040;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:586 */
+.x-box-scroller-tab-bar-navigation .x-ie8 .x-box-scroller-plain {
+    background-color: #fff;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:624 */
+.x-tab-bar-navigation-top .x-box-scroller-left {
+    background-image: url(images/tab-bar/navigation-scroll-left-top.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:627 */
+.x-tab-bar-navigation-top .x-box-scroller-right {
+    background-image: url(images/tab-bar/navigation-scroll-right-top.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:633 */
+.x-tab-bar-navigation-bottom .x-box-scroller-left {
+    background-image: url(images/tab-bar/navigation-scroll-left-bottom.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:636 */
+.x-tab-bar-navigation-bottom .x-box-scroller-right {
+    background-image: url(images/tab-bar/navigation-scroll-right-bottom.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:642 */
+.x-tab-bar-navigation-left .x-box-scroller-top {
+    background-image: url(images/tab-bar/navigation-scroll-top-left.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:645 */
+.x-tab-bar-navigation-left .x-box-scroller-bottom {
+    background-image: url(images/tab-bar/navigation-scroll-bottom-left.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:651 */
+.x-tab-bar-navigation-right .x-box-scroller-top {
+    background-image: url(images/tab-bar/navigation-scroll-top-right.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/tab/Bar.scss:654 */
+.x-tab-bar-navigation-right .x-box-scroller-bottom {
+    background-image: url(images/tab-bar/navigation-scroll-bottom-right.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-bar-navigation-top:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, stretch:bottom, stretch:bottom, stretch:bottom, stretch:bottom" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-bar-navigation-bottom:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, stretch:top, stretch:top, stretch:top, stretch:top" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-bar-navigation-left:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, stretch:right, stretch:right, stretch:right, stretch:right" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-tab-bar-navigation-right:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, stretch:left, stretch:left, stretch:left, stretch:left" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:276 */
+.x-panel-navigation {
+    border-color: #99bce8;
+    padding: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:282 */
+.x-panel-header-navigation {
+    font-size: 20px;
+    border: 1px solid #99bce8;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:313 */
+.x-panel-header-navigation-horizontal {
+    padding: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:317 */
+.x-panel-header-navigation-horizontal .x-panel-header-navigation-tab-bar {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:337 */
+.x-panel-header-navigation-vertical {
+    padding: 0 0 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:341 */
+.x-panel-header-navigation-vertical .x-panel-header-navigation-tab-bar {
+    margin-right: 0;
+    margin-left: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:362 */
+.x-rtl.x-panel-header-navigation-vertical {
+    padding: 0 0 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:366 */
+.x-rtl.x-panel-header-navigation-vertical .x-panel-header-navigation-tab-bar {
+    margin-left: 0;
+    margin-right: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:387 */
+.x-panel-header-title-navigation {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: tahoma, arial, verdana, sans-serif;
+    line-height: 24px;
+    margin: 36px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:400 */
+.x-panel-header-title-navigation > .x-title-text-navigation {
+    text-transform: none;
+    padding: 0 2px 1px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:447 */
+.x-panel-header-title-navigation > .x-title-icon-wrap-navigation.x-title-icon-top {
+    height: 39px;
+    padding-bottom: 15px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:452 */
+.x-panel-header-title-navigation > .x-title-icon-wrap-navigation.x-title-icon-right {
+    width: 39px;
+    padding-left: 15px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:457 */
+.x-panel-header-title-navigation > .x-title-icon-wrap-navigation.x-title-icon-right.x-rtl {
+    padding-left: 0;
+    padding-right: 15px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:464 */
+.x-panel-header-title-navigation > .x-title-icon-wrap-navigation.x-title-icon-bottom {
+    height: 39px;
+    padding-top: 15px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:469 */
+.x-panel-header-title-navigation > .x-title-icon-wrap-navigation.x-title-icon-left {
+    width: 39px;
+    padding-right: 15px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:474 */
+.x-panel-header-title-navigation > .x-title-icon-wrap-navigation.x-title-icon-left.x-rtl {
+    padding-right: 0;
+    padding-left: 15px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:481 */
+.x-panel-header-title-navigation > .x-title-icon-wrap-navigation > .x-title-icon-navigation {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    color: #fff;
+    background-position: center center;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:501 */
+.x-ie8 .x-panel-header-title-navigation > .x-title-icon-wrap-navigation > .x-title-icon-navigation.x-title-glyph {
+    color: #fff;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:512 */
+.x-panel-body-navigation {
+    background: #fff;
+    border-color: #99bce8;
+    color: #000;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: tahoma, arial, verdana, sans-serif;
+    border-width: 1px;
+    border-style: solid;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:676 */
+.x-panel-header-navigation {
+    background-image: none;
+    background-color: #c0d4ed;
+    background-image: -webkit-gradient(linear, top, bottom, color-stop(0%, #cfdef0), color-stop(45%, #c2d5ed), color-stop(46%, #a1bee5), color-stop(50%, #a1bee5), color-stop(51%, #aec6e7), color-stop(0%, #c0d4ed));
+    background-image: -webkit-linear-gradient(top, #cfdef0, #c2d5ed 45%, #a1bee5 46%, #a1bee5 50%, #aec6e7 51%, #c0d4ed);
+    background-image: -moz-linear-gradient(top, #cfdef0, #c2d5ed 45%, #a1bee5 46%, #a1bee5 50%, #aec6e7 51%, #c0d4ed);
+    background-image: -o-linear-gradient(top, #cfdef0, #c2d5ed 45%, #a1bee5 46%, #a1bee5 50%, #aec6e7 51%, #c0d4ed);
+    background-image: -ms-linear-gradient(top, #cfdef0, #c2d5ed 45%, #a1bee5 46%, #a1bee5 50%, #aec6e7 51%, #c0d4ed);
+    background-image: linear-gradient(top, #cfdef0, #c2d5ed 45%, #a1bee5 46%, #a1bee5 50%, #aec6e7 51%, #c0d4ed);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:680 */
+.x-panel-header-navigation-vertical {
+    background-image: none;
+    background-color: #c0d4ed;
+    background-image: -webkit-gradient(linear, top, bottom, color-stop(0%, #cfdef0), color-stop(45%, #c2d5ed), color-stop(46%, #a1bee5), color-stop(50%, #a1bee5), color-stop(51%, #aec6e7), color-stop(0%, #c0d4ed));
+    background-image: -webkit-linear-gradient(right, #cfdef0, #c2d5ed 45%, #a1bee5 46%, #a1bee5 50%, #aec6e7 51%, #c0d4ed);
+    background-image: -moz-linear-gradient(right, #cfdef0, #c2d5ed 45%, #a1bee5 46%, #a1bee5 50%, #aec6e7 51%, #c0d4ed);
+    background-image: -o-linear-gradient(right, #cfdef0, #c2d5ed 45%, #a1bee5 46%, #a1bee5 50%, #aec6e7 51%, #c0d4ed);
+    background-image: -ms-linear-gradient(right, #cfdef0, #c2d5ed 45%, #a1bee5 46%, #a1bee5 50%, #aec6e7 51%, #c0d4ed);
+    background-image: linear-gradient(right, #cfdef0, #c2d5ed 45%, #a1bee5 46%, #a1bee5 50%, #aec6e7 51%, #c0d4ed);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:685 */
+.x-rtl.x-panel-header-navigation-vertical {
+    background-image: none;
+    background-color: #c0d4ed;
+    background-image: -webkit-gradient(linear, top, bottom, color-stop(0%, #cfdef0), color-stop(45%, #c2d5ed), color-stop(46%, #a1bee5), color-stop(50%, #a1bee5), color-stop(51%, #aec6e7), color-stop(0%, #c0d4ed));
+    background-image: -webkit-linear-gradient(left, #cfdef0, #c2d5ed 45%, #a1bee5 46%, #a1bee5 50%, #aec6e7 51%, #c0d4ed);
+    background-image: -moz-linear-gradient(left, #cfdef0, #c2d5ed 45%, #a1bee5 46%, #a1bee5 50%, #aec6e7 51%, #c0d4ed);
+    background-image: -o-linear-gradient(left, #cfdef0, #c2d5ed 45%, #a1bee5 46%, #a1bee5 50%, #aec6e7 51%, #c0d4ed);
+    background-image: -ms-linear-gradient(left, #cfdef0, #c2d5ed 45%, #a1bee5 46%, #a1bee5 50%, #aec6e7 51%, #c0d4ed);
+    background-image: linear-gradient(left, #cfdef0, #c2d5ed 45%, #a1bee5 46%, #a1bee5 50%, #aec6e7 51%, #c0d4ed);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:698 */
+.x-nlg .x-panel-header-navigation-top {
+    background: url(images/panel-header/panel-header-navigation-top-bg.gif);
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:703 */
+.x-nlg .x-panel-header-navigation-bottom {
+    background: url(images/panel-header/panel-header-navigation-bottom-bg.gif) bottom left;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:708 */
+.x-nlg .x-panel-header-navigation-left {
+    background: url(images/panel-header/panel-header-navigation-left-bg.gif) top left;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:713 */
+.x-nlg .x-panel-header-navigation-right {
+    background: url(images/panel-header/panel-header-navigation-right-bg.gif) top right;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:720 */
+.x-nlg .x-rtl.x-panel-header-navigation-left {
+    background: url(images/panel-header/panel-header-navigation-left-bg-rtl.gif) top right;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:724 */
+.x-nlg .x-rtl.x-panel-header-navigation-right {
+    background: url(images/panel-header/panel-header-navigation-right-bg-rtl.gif) top left;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:738 */
+.x-panel .x-panel-header-navigation-collapsed-border-top {
+    border-bottom-width: 1px !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:742 */
+.x-panel .x-panel-header-navigation-collapsed-border-right {
+    border-left-width: 1px !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:746 */
+.x-panel .x-panel-header-navigation-collapsed-border-bottom {
+    border-top-width: 1px !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:750 */
+.x-panel .x-panel-header-navigation-collapsed-border-left {
+    border-right-width: 1px !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-panel-header-navigation-top:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, bg:url(images/panel-header/panel-header-navigation-top-bg.gif), stretch:bottom, bg:url(images/panel-header/panel-header-navigation-top-bg.gif), stretch:bottom, bg:url(images/panel-header/panel-header-navigation-top-bg.gif), stretch:bottom, bg:url(images/panel-header/panel-header-navigation-top-bg.gif), stretch:bottom" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-panel-header-navigation-bottom:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, bg:url(images/panel-header/panel-header-navigation-bottom-bg.gif), stretch:top, bg:url(images/panel-header/panel-header-navigation-bottom-bg.gif), stretch:top, bg:url(images/panel-header/panel-header-navigation-bottom-bg.gif), stretch:top, bg:url(images/panel-header/panel-header-navigation-bottom-bg.gif), stretch:top" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-panel-header-navigation-left:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, bg:url(images/panel-header/panel-header-navigation-left-bg.gif), bg-rtl:url(images/panel-header/panel-header-navigation-left-bg-rtl.gif), stretch:right, bg:url(images/panel-header/panel-header-navigation-left-bg.gif), bg-rtl:url(images/panel-header/panel-header-navigation-left-bg-rtl.gif), stretch:right, bg:url(images/panel-header/panel-header-navigation-left-bg.gif), bg-rtl:url(images/panel-header/panel-header-navigation-left-bg-rtl.gif), stretch:right, bg:url(images/panel-header/panel-header-navigation-left-bg.gif), bg-rtl:url(images/panel-header/panel-header-navigation-left-bg-rtl.gif), stretch:right" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
+.x-cmd-slicer.x-panel-header-navigation-right:before {
+    /*<if slicer>*/
+    display: none;
+    content: "x-slicer:, bg:url(images/panel-header/panel-header-navigation-right-bg.gif), bg-rtl:url(images/panel-header/panel-header-navigation-right-bg-rtl.gif), stretch:left, bg:url(images/panel-header/panel-header-navigation-right-bg.gif), bg-rtl:url(images/panel-header/panel-header-navigation-right-bg-rtl.gif), stretch:left, bg:url(images/panel-header/panel-header-navigation-right-bg.gif), bg-rtl:url(images/panel-header/panel-header-navigation-right-bg-rtl.gif), stretch:left, bg:url(images/panel-header/panel-header-navigation-right-bg.gif), bg-rtl:url(images/panel-header/panel-header-navigation-right-bg-rtl.gif), stretch:left" !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:767 */
+.x-panel-header-navigation-top {
+    -webkit-box-shadow: #f3f7fb 0 1px 0px 0 inset;
+    -moz-box-shadow: #f3f7fb 0 1px 0px 0 inset;
+    box-shadow: #f3f7fb 0 1px 0px 0 inset;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:771 */
+.x-panel-header-navigation-right {
+    -webkit-box-shadow: #f3f7fb -1px 0 0px 0 inset;
+    -moz-box-shadow: #f3f7fb -1px 0 0px 0 inset;
+    box-shadow: #f3f7fb -1px 0 0px 0 inset;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:775 */
+.x-panel-header-navigation-bottom {
+    -webkit-box-shadow: #f3f7fb 0 -1px 0px 0 inset;
+    -moz-box-shadow: #f3f7fb 0 -1px 0px 0 inset;
+    box-shadow: #f3f7fb 0 -1px 0px 0 inset;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:779 */
+.x-panel-header-navigation-left {
+    -webkit-box-shadow: #f3f7fb 1px 0 0px 0 inset;
+    -moz-box-shadow: #f3f7fb 1px 0 0px 0 inset;
+    box-shadow: #f3f7fb 1px 0 0px 0 inset;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:786 */
+.x-panel-header-navigation-horizontal .x-tool-after-title {
+    margin: 0 0 0 2px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:791 */
+.x-panel-header-navigation-horizontal .x-rtl.x-tool-after-title {
+    margin: 0 2px 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:796 */
+.x-panel-header-navigation-horizontal .x-tool-before-title {
+    margin: 0 2px 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:801 */
+.x-panel-header-navigation-horizontal .x-rtl.x-tool-before-title {
+    margin: 0 0 0 2px;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:808 */
+.x-panel-header-navigation-vertical .x-tool-after-title {
+    margin: 2px 0 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:813 */
+.x-panel-header-navigation-vertical .x-rtl.x-tool-after-title {
+    margin: 2px 0 0 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:818 */
+.x-panel-header-navigation-vertical .x-tool-before-title {
+    margin: 0 0 2px 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:823 */
+.x-panel-header-navigation-vertical .x-rtl.x-tool-before-title {
+    margin: 0 0 2px 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:830 */
+.x-panel-header-navigation .x-tool-focus {
+    outline: 1px dotted #464646;
+    outline-offset: 0;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/css-outline.scss:58 */
+.x-ie8 .x-panel-header-navigation .x-tool-focus {
+    outline: none;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-base/sass/etc/mixins/css-outline.scss:40 */
+.x-ie8 .x-panel-header-navigation .x-tool-focus:after {
+    position: absolute;
+    content: ' ';
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    border: 1px dotted #464646;
+    pointer-events: none;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:842 */
+.x-rtl.x-panel-header-navigation-collapsed-border-right {
+    border-right-width: 1px !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:845 */
+.x-rtl.x-panel-header-navigation-collapsed-border-left {
+    border-left-width: 1px !important;
+}
+/* C:/Sencha/workspace/Study/ext/classic/theme-neutral/sass/src/panel/Panel.scss:859 */
+.x-panel-navigation-resizable .x-panel-handle {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    opacity: 0;
+}
+/* C:/Sencha/workspace/Study/sass/src/view/main/Main.scss:60 */
+.x-title-icon-navigation {
+    font-family: FontAwesome;
+    color: #fff;
+    font-size: 24px;
+    line-height: 24px;
+}
+/* C:/Sencha/workspace/Study/sass/src/view/main/Main.scss:67 */
+.x-tab-icon-el-navigation {
+    font-family: FontAwesome;
+    color: #acacac;
+}
+/* C:/Sencha/workspace/Study/sass/src/view/main/Main.scss:71 */
+.x-tab-over .x-tab-icon-el-navigation {
+    color: #c4c4c4;
+}
+/* C:/Sencha/workspace/Study/sass/src/view/main/Main.scss:75 */
+.x-tab-active .x-tab-icon-el-navigation {
+    color: #fff;
+}
+/* C:/Sencha/workspace/Study/sass/src/view/main/Main.scss:80 */
+.x-panel-header-title-navigation > .x-title-text-navigation:after {
+    top: 30px;
+    right: -24px;
+}
