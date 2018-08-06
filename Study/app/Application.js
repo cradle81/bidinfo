@@ -12,7 +12,8 @@ Ext.define('Study.Application', {
     stores: [
         // TODO: add global / shared stores here
         // 수정하였음 
-        // 수정 추가 
+        // 수정 추가  
+        // 수정추가2
     ],
     
     launch: function () {
