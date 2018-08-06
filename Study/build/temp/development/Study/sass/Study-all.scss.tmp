@@ -1,5 +1,5 @@
 $app-name:  dynamic( 'Study' );
-$image-search-path: 'C:/Sencha/workspace/Study/build/development/Study/resources';
+$image-search-path: 'C:/Sencha/git/Study/build/development/Study/resources';
 $theme-name:  dynamic( 'theme-triton' );
 $include-ext-abstractcomponent: dynamic(true);;
 $include-ext-abstractcontainer: dynamic(true);;
