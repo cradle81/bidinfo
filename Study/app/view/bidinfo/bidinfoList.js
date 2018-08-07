@@ -70,7 +70,7 @@ Ext.define('Study.view.bidinfo.bidinfoList', {
 	    		xtype : 'button',
 	    		name : 'searchButton',
 	    		text : '검색'	,	 
-	    		width : '30%',
+	    		width : '40%',
 	    		handler: 'search'
 	        }],
     	columns : [{
