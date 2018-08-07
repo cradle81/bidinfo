@@ -1,0 +1,20 @@
+# sample gitignore for extjs project
+# The build directory can be recreated by developers using Sencha
+# Cmd – it should be excluded from the repo
+build/
+
+# Changes every time a build is run
+bootstrap.js
+bootstrap.css
+
+# Temporary files created when compiling .scss files
+.sass-cache/
+
+# Some team members may use Sencha architect – exclude so they
+# keep their custom settings
+.architect
+
+# It's possible to create reusable packages using Sencha Cmd
+# but depending on your preference you might want to exclude this
+# directory.
+packages/
