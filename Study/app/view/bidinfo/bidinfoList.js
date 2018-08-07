@@ -69,7 +69,8 @@ Ext.define('Study.view.bidinfo.bidinfoList', {
     	tbar: [{
 	    		xtype : 'button',
 	    		name : 'searchButton',
-	    		text : '검색'	,	    	
+	    		text : '검색'	,	 
+	    		width : '30%',
 	    		handler: 'search'
 	        }],
     	columns : [{
