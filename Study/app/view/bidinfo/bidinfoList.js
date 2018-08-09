@@ -1,7 +1,16 @@
+
+
+
+
 Ext.define('Study.view.bidinfo.bidinfoList', {
     extend: 'Ext.panel.Panel',
     xtype: 'bidinfoList',
-    controller: 'bidinfo',
+    controller: 'bidinfoList',
+    viewModel: 'bidinfoList', 
+    listeners : {
+    	//boxready : 'onLoadData',
+    	resize : 'setGridHeight'
+    },
     title : '입찰공고검색',
     items : [{
     	xtype : 'panel',
@@ -14,17 +23,32 @@ Ext.define('Study.view.bidinfo.bidinfoList', {
     		anchor : '100%',
     		fieldLabel : '시작일시',
     		name : 'from_date',
-    	    format: 'Y/m/d',
-    	    padding: 5
+    	    format: 'Y/m/d',    	    
+    	    padding: 5,
+    	    bind :{
+    	    	value : '{fromDate}'
+    	    },
+    	    enableKeyEvents: true,
+            listeners: {                   
+                'keypress': 'keyPress'                    	  	     
+                    	   
+            }
         },{
         	xtype : 'datefield',
     		anchor : '100%',
     		fieldLabel : '종료일시',
     		name : 'to_date',
-    		format: 'Y/m/d',
-    		value : new Date(), //현재날짜에서 1달전
+    		format: 'Y/m/d',    		
     		maxValue: new Date(),
-    		padding: 5
+    		padding: 5,
+    		bind :{
+    	    	value : '{toDate}'
+    	    },
+    	    enableKeyEvents: true,
+            listeners: {                   
+                'keypress': 'keyPress'                    	  	     
+                    	   
+            }	
     	}]
         },{
 	    	xtype : 'panel',
@@ -34,20 +58,37 @@ Ext.define('Study.view.bidinfo.bidinfoList', {
 	        },
 	        items : [{
 	    		xtype : 'textfield',
-	    		name : 'intName',
+	    		name : 'instNm',
 	    		anchor : '100%',
 	    		fieldLabel: '발주기관',
 	    		allowBlank: 'true',
 	    		emptyText:'발주기관을 입력하세요',
-	    		padding: 5
+	    		padding: 5,
+	    		bind :{
+	    	    	value : '{instNm}'
+	    	    },
+	    	    enableKeyEvents: true,
+	            listeners: {                   
+	                'keypress': 'keyPress'                    	  	     
+	                    	   
+	                    }	                                                   
+	            
 	    	},{
 	    		xtype : 'textfield',
 	    		name : 'keyword',
 	    		anchor : '100%',
 	    		fieldLabel: '키 워 드',
 	    		allowBlank: 'true',
-	    		emptyText:'키워드를 입력하세요',
-	    		padding: 5
+	    		emptyText:'키워드를 입력하세요', 
+	    		padding: 5,
+	    		bind :{
+	    	    	value : '{keyword}'
+	    	    },
+	    	    enableKeyEvents: true,
+	            listeners: {                   
+	                'keypress': 'keyPress'                    	  	     
+	                    	   
+	                    }	
 	    		
 	    	}]
       },{
@@ -66,6 +107,11 @@ Ext.define('Study.view.bidinfo.bidinfoList', {
       },{
     	xtype : 'grid',
     	columnLines: true,
+    	border : true,    
+    	height : 250,
+    	viewConfig : {
+    		emptyText : '데이터가 없습니다.'    		
+    	},    	
     	tbar: [{
 	    		xtype : 'button',
 	    		name : 'searchButton',
@@ -93,20 +139,9 @@ Ext.define('Study.view.bidinfo.bidinfoList', {
     		flex : 1,
     		dataIndex : 'link'
     	}],
-    	store : {
-    	    fields: ['time', 'name', 'intName','link'],
-
-             data: [{ 
-            	 time: '2017/12/12' ,
-            	 name: 'Jean Luc', 
-            	 instNm: "jeanluc.picard@enterprise.com", 
-            	 link: "555-111-1111"
-             },{
-            	 time: '2017/12/12', 
-            	 name: 'Worf',     
-            	 instNm: "worf.moghsson@enterprise.com",  
-            	 link: "555-222-2222"
-             }]
+    	bind : {
+    		store : '{bidinfoList}'
+    	   
     	},
     	bbar :{
     		xtype:'pagingtoolbar',
