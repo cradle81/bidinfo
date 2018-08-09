@@ -6,6 +6,8 @@ build/
 # Changes every time a build is run
 bootstrap.js
 bootstrap.css
+bootstrap.json
+bootstrap.jsonp
 
 # Temporary files created when compiling .scss files
 .sass-cache/

@@ -1,7 +1,3 @@
-
-
-
-
 Ext.define('Study.view.bidinfo.bidinfoList', {
     extend: 'Ext.panel.Panel',
     xtype: 'bidinfoList',
@@ -127,22 +123,35 @@ Ext.define('Study.view.bidinfo.bidinfoList', {
     		dataIndex : 'time'
     	},{
     		text : '공고명',
-    		flex : 1,
+    		flex : 3,
     		dataIndex : 'name'
     			
     	},{
     		text : '수요기관',
     		flex : 1, 
     		dataIndex : 'instNm'
-    	},{				
+    	},{
+    		text : '바로가기',
+    		xtype : 'widgetcolumn',    		
+    		widget : {
+    			xtype : 'button',
+        		name : 'detailButton',
+        		text : '상세확인',
+        		handler : 'gotoDetail'
+    		}
+    		
+    	}/*,{				
     		text : 'URL',
     		flex : 1,
     		dataIndex : 'link'
-    	}],
+    	}*/],
     	bind : {
     		store : '{bidinfoList}'
     	   
     	},
+/*    	listeners : { 
+    		cellclick : 'gotoDetail'
+    	},*/
     	bbar :{
     		xtype:'pagingtoolbar',
     		//plugin : ''

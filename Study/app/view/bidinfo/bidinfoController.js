@@ -94,5 +94,20 @@ Ext.define('Study.view.bidinfo.bidinfoController', {
         if (event.getKey() == event.ENTER){
         	this.search();
         	} 
-    }
+    },
+/*    cellClicked : function(table, td, cellIndex, record, tr, rowIndex, e, eOpts ){    	    	
+    	var me = this;
+    	var view = me.getView();
+    	var viewModel = me.getViewModel();
+    	var store = viewModel.getStore(view['xtype']);    	  
+		//console.log(store.getAt(cellIndex).get('link'));
+		window.open(store.getAt(cellIndex).get('link'));
+    	
+    	
+	}*/
+    
+    gotoDetail : function(btn){
+		var record = btn.getWidgetRecord();
+		window.open(record.get('link'));	
+	}	 
 });

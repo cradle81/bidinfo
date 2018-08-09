@@ -15,9 +15,10 @@ Ext.define('Study.view.bindinfo.bidinfoModel', {
     alias: 'viewmodel.bidinfoList',
     
     data : {
-    	instNm : '',
+    	instNm : '대법원',
     	keyword : '',
-    	fromDate: oneMonthAgo(),
+    	//fromDate: oneMonthAgo(),
+    	fromDate: new Date('2018/8/1'),
     	toDate: new Date()
     	
     		
