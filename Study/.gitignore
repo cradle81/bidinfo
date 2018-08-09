@@ -18,3 +18,5 @@ bootstrap.css
 # but depending on your preference you might want to exclude this
 # directory.
 packages/
+
+*bootstrap*
