@@ -27,7 +27,15 @@ Ext.define('Study.view.bidinfo.bidinfoController', {
     	var view = me.getView();
     	var viewModel = me.getViewModel();
     	var store = viewModel.getStore(view['xtype']);
-    	var proxy = store.getProxy();
+    	var proxy = store.getProxy();    	
+    	var radio = me.lookupReference('searchType-ref');
+    	
+    	//(getGroupValue ) If this radio is part of a group, it will return the selected value
+    	//console.log(radio.items.get(0).getGroupValue()); 
+    	
+    	
+    	//console.log(view.getForm().findField('searchType'));
+    	//console.log(view.getForm().findField('searchType').getValue());
     	
     	/*
     	var params = {
@@ -40,18 +48,21 @@ Ext.define('Study.view.bidinfo.bidinfoController', {
     	store.load({
 		params : params
 	    }); */
-    	
-    	
+    	    	
     	//store.reload(); // reload로 호출하면 page처리때문에 6개번 호출된다.
+    	
+    	 if (viewModel.get("instNm") == "" && viewModel.get("keyword") == "")
+    		 Ext.Msg.alert('경고', '발주기관 혹은 키워드 하나를 반드시 입력하세요', Ext.emptyFn);
     	
     	proxy.setExtraParam("instNm", viewModel.get("instNm"));
     	proxy.setExtraParam("keyword", viewModel.get("keyword"));
     	proxy.setExtraParam("fromDate", Ext.Date.format(viewModel.get("fromDate"),'Y/m/d'));
-    	proxy.setExtraParam("toDate", Ext.Date.format(viewModel.get("toDate"),'Y/m/d'));    	
-    	store.load();
+    	proxy.setExtraParam("toDate", Ext.Date.format(viewModel.get("toDate"),'Y/m/d'));
+    	proxy.setExtraParam("searchType", radio.items.get(0).getGroupValue());
+        store.load();
 
-    	
-    	
+    	   
+    	 
     	
     	/*Ext.Ajax.request({
     		url : 'http://localhost:8080/tta/test/json.do',

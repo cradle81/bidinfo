@@ -37,14 +37,14 @@ Ext.define('Study.store.BidInfoList', {
 //		}
 //	}  
      
-// 이 설정을 주면 reload시 다시 호출한다.
+// 이 설정을 주면 reload시 다시 호출한다. 
      proxy : {
 		 type : 'ajax',
 		 actionMethods :{
 			 read : 'GET'
 		 },
 		 //url : '/tta/test/json.do',
-		 url : 'http://localhost:8080/tta/test/json.do',		 
+		 url : 'http://localhost:8080/tta/bidinfo/bidinfoList.do',		 
 		 reader: {
 			 type : 'json',
 			 rootProperty : 'data',

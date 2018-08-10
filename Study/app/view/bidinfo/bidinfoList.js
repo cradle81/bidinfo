@@ -90,15 +90,15 @@ Ext.define('Study.view.bidinfo.bidinfoList', {
       },{
     	  xtype : 'radiogroup',
     	  fieldLabel : '검색유형',
-    	  name : 'searchType',    	  
+    	  reference : 'searchType-ref', 
     	  columns : 2,
     	  width :  450, 
-    	  anchor: '100%',
+    	  anchor: '100%', 
     	  vertical : false,
     	  padding : 5,
     	  items : [
-    		  {boxLabel: '사전공고', inputValue: 1,checked: true},
-              {boxLabel: '본공고', inputValue: 2}
+    		  {name : 'searchType', boxLabel: '사전공고', inputValue: 'p', checked: true},
+              {name : 'searchType', boxLabel: '본공고', inputValue: 't'}
     	  ] 
       },{
     	xtype : 'grid',

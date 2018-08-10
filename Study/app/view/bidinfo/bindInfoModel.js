@@ -6,7 +6,7 @@ function oneMonthAgo(){
     //put real logic for getting date prior to 3 months here
 	var date = new Date();
 	//date.setMonth(date.getMonth() - 1);
-	date.setDate(date.getDate() -1);
+	date.setDate(date.getDate() - 7);
 	return date;   
 } 
 
@@ -15,10 +15,10 @@ Ext.define('Study.view.bindinfo.bidinfoModel', {
     alias: 'viewmodel.bidinfoList',
     
     data : {
-    	instNm : '대법원',
+    	instNm : '',
     	keyword : '',
     	//fromDate: oneMonthAgo(),
-    	fromDate: new Date('2018/8/1'),
+    	fromDate: oneMonthAgo(), 
     	toDate: new Date()
     	
     		
