@@ -24,12 +24,32 @@ Ext.define('Study.view.bidinfo.bidinfoController', {
     },
     search : function(btn){
     	var me = this;
-    	var view = me.getView();
+    	var view = me.getView(); 
     	var viewModel = me.getViewModel();
     	var store = viewModel.getStore(view['xtype']);
+    	//var store = viewModel.getStore('bidinfoList');
     	var proxy = store.getProxy();    	
     	var radio = me.lookupReference('searchType-ref');
     	
+    	
+    	
+    	var fromDate =  Ext.Date.format(viewModel.get("fromDate"),'Y/m/d');
+    	var toDate =  Ext.Date.format(viewModel.get("toDate"),'Y/m/d');
+    	var instName = viewModel.get("instNm");
+    	var keyword = viewModel.get("keyword");
+    	var searchType = radio.items.get(0).getGroupValue()
+    		
+    	
+    	//searchViewModel을 찾아보자
+    	var searchHistoryGrid = view.down('grid[title=검색기록]');
+    	var searchHistoryGridviewModel = searchHistoryGrid.getViewModel();
+    	var searchHistoryStore = searchHistoryGridviewModel.getStore('searchHistoryStore');
+    
+    	
+    	 
+    	
+    	
+   	
     	//(getGroupValue ) If this radio is part of a group, it will return the selected value
     	//console.log(radio.items.get(0).getGroupValue()); 
     	
@@ -52,18 +72,21 @@ Ext.define('Study.view.bidinfo.bidinfoController', {
     	//store.reload(); // reload로 호출하면 page처리때문에 6개번 호출된다.
     	
     	 if (viewModel.get("instNm") == "" && viewModel.get("keyword") == "")
+    	 {
     		 Ext.Msg.alert('경고', '발주기관 혹은 키워드 하나를 반드시 입력하세요', Ext.emptyFn);
+    	 }
+    	 else
+    	{
+    		    proxy.setExtraParam("instNm", viewModel.get("instNm"));
+    	    	proxy.setExtraParam("keyword", viewModel.get("keyword"));
+    	    	proxy.setExtraParam("fromDate", Ext.Date.format(viewModel.get("fromDate"),'Y/m/d'));
+    	    	proxy.setExtraParam("toDate", Ext.Date.format(viewModel.get("toDate"),'Y/m/d'));
+    	    	proxy.setExtraParam("searchType", radio.items.get(0).getGroupValue());
+    	        store.load();    
+    	        searchHistoryStore.add({time: Ext.Date.format(new Date(),'H:i:s') ,instName: instName, keyword: keyword ,searchType : searchType ,schedule : false});
+    	}
     	
-    	proxy.setExtraParam("instNm", viewModel.get("instNm"));
-    	proxy.setExtraParam("keyword", viewModel.get("keyword"));
-    	proxy.setExtraParam("fromDate", Ext.Date.format(viewModel.get("fromDate"),'Y/m/d'));
-    	proxy.setExtraParam("toDate", Ext.Date.format(viewModel.get("toDate"),'Y/m/d'));
-    	proxy.setExtraParam("searchType", radio.items.get(0).getGroupValue());
-        store.load();
 
-    	   
-    	 
-    	
     	/*Ext.Ajax.request({
     		url : 'http://localhost:8080/tta/test/json.do',
     		method : 'GET',
@@ -120,5 +143,97 @@ Ext.define('Study.view.bidinfo.bidinfoController', {
     gotoDetail : function(btn){
 		var record = btn.getWidgetRecord();
 		window.open(record.get('link'));	
-	}	 
+	},	 
+    regMointoringSchedule : function(obj){    
+    	//gird를 찾고
+    	var me = this;
+    	var view = me.getView(); 
+    	var searchHistoryGrid = view.down('grid[title=검색기록]');
+    	
+    	
+    	//selModel을 찾고
+    	var searchHistoryGridSelModel = searchHistoryGrid.getSelectionModel();    	
+    	var selectionSearchHistoryGridSelModel = searchHistoryGridSelModel.getSelection();
+    	
+    	
+    	
+    	
+    	 var win = this.lookupReference('regMointoringSchedule');
+    	 if (!win) {
+             win = new Study.view.bidinfo.regMointoringSchedule();
+             this.getView().add(win);
+    	 }
+    	 win.show(); 
+    	
+    	
+    	
+    	
+    	
+
+    	//Ext.widget('regMointoringSchedule');
+    	  /*Ext.create({
+              xtype: 'regMointoringSchedule'
+          });*/
+    },
+    actionRegMonitoringSchedule: function(btn){
+    	//KitchenSink.toast('Button Click','You clicked the "{0}" button.', btn.displayText || btn.text);
+    	//gird를 찾고
+    	var me = this; 
+    	var view = me.getView('regMointoringSchedule');
+    	var view2 = me.getView('bidinfoList');
+    	console.log(view.getViewModel());
+    	console.log(view2.getViewModel()); 
+    	
+    	console.log(searchHistoryGrid);
+//    	var viewModel = searchHistoryGrid.getViewModel();
+    	console.log(viewModel.get("instName"));
+    	console.log(viewModel.get("keyword"));
+    	
+    	 
+    },
+    searchHistorycellClick : function(obj, td, cellIndex, record, tr, rowIndex, e, eOpts ){
+	    	//gird를 찾고
+	    	var me = this;
+	    	var view = me.getView(); 
+	    	
+	    	var searchHistoryGrid = view.down('grid[title=검색기록]');
+	    	var viewModel = searchHistoryGrid.getViewModel();
+	    	
+	    	
+	    	//selModel을 찾고, 그러나  크게 의미 없음
+	    	/*var searchHistoryGridSelModel = searchHistoryGrid.getSelectionModel();    	
+	    	var selectionSearchHistoryGridSelModel = searchHistoryGridSelModel.getSelection();*/
+	    	
+	    	// viewModel에 셋팅
+	    	console.log(record.get("instName"));
+	    	console.log(record.get("keyword"));
+	    	console.log(viewModel);
+	    	viewModel.set('instName','한국정보통신기술협회');
+	    	viewModel.notify();
+	    	console.log(viewModel);
+	    	/*viewModel.set('instName',record.get("instName"));
+	    	viewModel.set('keyword',record.get("keyword"));*/
+	    	 
+	    	
+		},
+	   showRegMonitoringSchedule : function(obj,eOpts){	
+		    	//gird를 찾고
+		      var me = this;
+		      var view = me.getView(); 
+		    	
+		      var searchHistoryGrid = view.down('grid[title=검색기록]');
+		   	  var viewModel = searchHistoryGrid.getViewModel();
+		    	
+	    	
+			  var instNameTextfield = obj.down('textfield[name=instName]');
+			  var keywordTextfield = obj.down('textfield[name=keyword]');
+			  instNameTextfield.setValue(viewModel.get('instName'));
+			  keywordTextfield.setValue(viewModel.get('keyword'));
+			  
+			  console.log(instNameTextfield);
+			  console.log(keywordTextfield);
+		  
+			  
+	   }
+    
 });

@@ -5,7 +5,7 @@ Ext.application({
     requires: [
        // 'Ext.MessageBox'
        'Study.*' 
-    ],
+    ]
 
 /*    launch: function () {
         Ext.Msg.alert('Hello Ext JS', 'Hello! Welcome to Ext JS.');

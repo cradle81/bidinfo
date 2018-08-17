@@ -1,6 +1,13 @@
 Ext.define('Study.view.bidinfo.bidinfoList', {
     extend: 'Ext.panel.Panel',
     xtype: 'bidinfoList',
+    requires: [
+               //'Study.*'
+               'Ext.form.field.*',
+               'Ext.form.*',
+               'Ext.grid.column.Widget' 
+               
+    ],    
     controller: 'bidinfoList',
     viewModel: 'bidinfoList', 
     listeners : {
@@ -82,8 +89,7 @@ Ext.define('Study.view.bidinfo.bidinfoList', {
 	    	    },
 	    	    enableKeyEvents: true,
 	            listeners: {                   
-	                'keypress': 'keyPress'                    	  	     
-	                    	   
+	                'keypress': 'keyPress'                    	  	     	                    	   
 	                    }	
 	    		
 	    	}]
@@ -97,66 +103,137 @@ Ext.define('Study.view.bidinfo.bidinfoList', {
     	  vertical : false,
     	  padding : 5,
     	  items : [
-    		  {name : 'searchType', boxLabel: '사전공고', inputValue: 'p', checked: true},
-              {name : 'searchType', boxLabel: '본공고', inputValue: 't'}
+    		  {name : 'searchType', boxLabel: '사전공고(p)', inputValue: 'p', checked: true},
+              {name : 'searchType', boxLabel: '본공고(t)', inputValue: 't'}
     	  ] 
       },{
-    	xtype : 'grid',
-    	columnLines: true,
-    	border : true,    
-    	height : 250,
-    	viewConfig : {
-    		emptyText : '데이터가 없습니다.'    		
-    	},    	
-    	tbar: [{
-	    		xtype : 'button',
-	    		name : 'searchButton',
-	    		text : '검색'	,	 
-	    		width : '40%',
-	    		handler: 'search'
-	        }],
-    	columns : [{
-    		xtype : 'rownumberer'
-    	}, {
-    		text : '입력일시(입찰마감일시)',
-    		flex : 1,
-    		dataIndex : 'time'
-    	},{
-    		text : '공고명',
-    		flex : 3,
-    		dataIndex : 'name'
-    			
-    	},{
-    		text : '수요기관',
-    		flex : 1, 
-    		dataIndex : 'instNm'
-    	},{
-    		text : '바로가기',
-    		xtype : 'widgetcolumn',    		
-    		widget : {
-    			xtype : 'button',
-        		name : 'detailButton',
-        		text : '상세확인',
-        		handler : 'gotoDetail'
-    		}
-    		
-    	}/*,{				
-    		text : 'URL',
-    		flex : 1,
-    		dataIndex : 'link'
-    	}*/],
-    	bind : {
-    		store : '{bidinfoList}'
-    	   
-    	},
-/*    	listeners : { 
-    		cellclick : 'gotoDetail'
-    	},*/
-    	bbar :{
-    		xtype:'pagingtoolbar',
-    		//plugin : ''
-    		displayInfo: true    		
-    	}
-    }]
+    	  xtype : 'panel',
+	      border : true,
+	      reference : 'panel-ref', 
+	      padding: 5,
+	     
+	      layout: {
+	            type: 'hbox',
+	      },
+	       items : [{
+	    	    xtype : 'grid',
+	    	    height : 250,
+	    	    split : {
+	  	    	  size : 1,
+	              style : {
+	                	'background' : 'gray'
+	              }
+	  	        },
+		       	columnLines: true,
+		        flex: 3,
+		       	viewConfig : {
+		       		emptyText : '데이터가 없습니다.'    		
+		       	},    	
+		       	tbar: [{
+		   	    		xtype : 'button',
+		   	    		name : 'searchButton',
+		   	    		text : '검색'	,	 
+		   	    		width : '40%',
+		   	    		handler: 'search'
+		   	        }],
+		       	columns : [{
+		       		xtype : 'rownumberer'
+		       	}, {
+		       		text : '입력일시(입찰마감일시)',
+		       		flex : 1,
+		       		dataIndex : 'time'
+		       	},{
+		       		text : '공고명',
+		       		flex : 3,
+		       		dataIndex : 'name'
+		       			
+		       	},{
+		       		text : '수요기관',
+		       		flex : 1, 
+		       		dataIndex : 'instNm'
+		       	},{
+		       		text : '바로가기',
+		       		xtype : 'widgetcolumn',    		
+		       		widget : {
+		       			xtype : 'button',
+		           		name : 'detailButton',
+		           		text : '상세확인',
+		           		handler : 'gotoDetail'
+		       		}
+		       		
+		       	}/*,{				
+		       		text : 'URL',
+		       		flex : 1,
+		       		dataIndex : 'link'
+		       	}*/],
+		       	bind : {
+		       		store : '{bidinfoList}'
+		       	   
+		       	},
+		   /*    	listeners : { 
+		       		cellclick : 'gotoDetail'
+		       	},*/
+		       	bbar :{
+		       		xtype:'pagingtoolbar',
+		       		//plugin : ''
+		       		displayInfo: true    		
+		       	}
+	        },{
+	    	    xtype : 'grid',
+		       	title : '검색기록',
+		        reference : 'searchGrid-ref', 
+		       	height : 450,
+		        flex: 1,
+		        viewModel : 'searchHistoryViewModel',
+		        selModel: {
+		            type: 'checkboxmodel',
+		            mode : 'SINGLE',		            
+		        }, 
+		       	tbar :{
+		       		xtype : 'button',
+		       		text: '스케줄등록',
+		       		width : 150,
+		       		layout : {
+		       			align : 'middle',
+		       			pack : 'center'
+		       		},
+		       		handler : 'regMointoringSchedule'
+		       	},
+		       	columns : [{
+		       		text : '검색시간',
+		       		flex : 1,
+		       		dataIndex: 'time'
+		       		
+		       	},{
+		       		text : '발주기관',
+		       		flex : 1,
+		       		dataIndex: 'instName'
+		       	},{
+		       		text: '키워드', 
+		       		flex : 1,
+		       		dataIndex: 'keyword'
+		       	},{
+		       		text : '검색타입',
+		       		flex : 1,
+		       	    dataIndex: 'searchType'
+		       	}/*,{
+		            xtype: 'checkcolumn',
+		            header: '등록',
+		            dataIndex: 'schedule',
+		            width: 60,
+		            editor: {
+		                xtype: 'checkbox',
+		                cls: 'x-grid-checkheader-editor'
+		            }
+		        }*/], 
+		       	bind : {
+		       		store : '{searchHistoryStore}'		       	   
+		       	},
+		       	listeners: {
+		       		cellclick: 'searchHistorycellClick'       		
+		       	}
+
+	       }] 
+         }]
      
 });

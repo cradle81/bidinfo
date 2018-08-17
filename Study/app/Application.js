@@ -19,7 +19,8 @@ Ext.define('Study.Application', {
     launch: function () {
         // TODO - Launch the application
     	//Ext.widget("login");
-    	Ext.widget("main"); 
+    	Ext.widget("main");
+   
     },
 
     onAppUpdate: function () {
@@ -37,3 +38,4 @@ Ext.define('Study.MainTest',{
 	extend: 'Ext.app.Application',
 	mainView : 'Study.view.mainTest.MainTest'
 });
+ 

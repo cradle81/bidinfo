@@ -5,7 +5,9 @@ Ext.define('Study.store.BidInfoList', {
     storeId : 'bidinfoList',
     autoLoad : false,
     
-   // model : 'Study.model.BidInfo',
+
+    
+    //model : 'Study.model.BidInfo', 
     
 //    viewModel: 'bidinfoList', 
 
@@ -20,7 +22,7 @@ Ext.define('Study.store.BidInfoList', {
         { time: '2017/12/12', name: 'Data',     instNm: "mr.data@enterprise.com",        link: "555-444-4444" }
     ]},
  
-    proxy: {
+    proxy: { 
         type: 'memory',
         reader: {
             type: 'json',
@@ -49,7 +51,7 @@ Ext.define('Study.store.BidInfoList', {
 			 type : 'json',
 			 rootProperty : 'data',
 			 totalProperty : 'tatalCount'
-		 },
+		 }
 //		 bind : {
 //			 extraParams : {
 //				 instNm : 'instNm'

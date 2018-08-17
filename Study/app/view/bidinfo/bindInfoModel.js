@@ -28,6 +28,7 @@ Ext.define('Study.view.bindinfo.bidinfoModel', {
     	bidinfoList : {
     		type : 'bidinfoList'
     	}
+	    
     }
 
 
