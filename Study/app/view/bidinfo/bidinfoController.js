@@ -149,24 +149,42 @@ Ext.define('Study.view.bidinfo.bidinfoController', {
     	var me = this;
     	var view = me.getView(); 
     	var searchHistoryGrid = view.down('grid[title=검색기록]');
+    	var viewModel = searchHistoryGrid.getViewModel();
     	
     	
     	//selModel을 찾고
     	var searchHistoryGridSelModel = searchHistoryGrid.getSelectionModel();    	
     	var selectionSearchHistoryGridSelModel = searchHistoryGridSelModel.getSelection();
     	
-    	
-    	
-    	
-    	 var win = this.lookupReference('regMointoringSchedule');
+    /*	 var win = this.lookupReference('regMointoringSchedule');
     	 if (!win) {
              win = new Study.view.bidinfo.regMointoringSchedule();
              this.getView().add(win);
     	 }
-    	 win.show(); 
+    	 win.show(); */
     	
     	
+		//만약 선택되지 않았다면 표시되지 말아야 한다 
     	
+    	 var isSelect = !selectionSearchHistoryGridSelModel;
+    	 
+    	 console.log(isSelect);
+    	   
+    	 if (isSelect)
+		 {
+	    	 var dialog = view.add({
+	    		 xtype : 'regMointoringSchedule',
+	    		 viewModel : {
+	    			 data : {
+	    				 instName : selectionSearchHistoryGridSelModel[0].get('time'),
+	    			     keyword : selectionSearchHistoryGridSelModel[0].get('keyword')
+	    			 }
+	    		 },
+	    		 session : true
+	    	 })
+	    	 dialog.show();
+		 }
+    	 
     	
     	
 
@@ -181,7 +199,7 @@ Ext.define('Study.view.bidinfo.bidinfoController', {
     	var me = this; 
     	var view = me.getView('regMointoringSchedule');
     	var view2 = me.getView('bidinfoList');
-    	console.log(view.getViewModel());
+    	console.log(view.getViewModel()); 
     	console.log(view2.getViewModel()); 
     	
     	console.log(searchHistoryGrid);
@@ -205,6 +223,8 @@ Ext.define('Study.view.bidinfo.bidinfoController', {
 	    	var selectionSearchHistoryGridSelModel = searchHistoryGridSelModel.getSelection();*/
 	    	
 	    	// viewModel에 셋팅
+	    	this.instName=record.get("instName");
+	    	this.keyword=record.get("keyword");
 	    	console.log(record.get("instName"));
 	    	console.log(record.get("keyword"));
 	    	console.log(viewModel);

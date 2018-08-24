@@ -9,7 +9,7 @@ Ext.define('Study.view.bidinfo.regMointoringSchedule',{
 	  //extend: 'Ext.form.Panel',
 	  extend : 'Ext.window.Window', 
 	  xtype: 'regMointoringSchedule',  
-	  viewModel: 'searchHistoryViewModel', 
+//	  viewModel: 'searchHistoryViewModel',  
 	  controller: 'bidinfoList',
 	  reference: 'regMointoringSchedule',
 	  
@@ -37,17 +37,17 @@ Ext.define('Study.view.bidinfo.regMointoringSchedule',{
 		  items :[{
 			  allowBlank:false, 
 			  fieldLabel: '발주기관', 
-			  name: 'instName'/*, 
+			  name: 'instName', 
 			  bind : {
 				  value : '{instName}'
-			  }*/ 
+			  }
 		  },{
-			  allowBlank:false, 
+			  allowBlank:false,  
 			  fieldLabel: '키워드', 
-			  name: 'keyword'/*, 
+			  name: 'keyword', 
 			  bind : {
 				  value : '{keyword}'
-			  }*/
+			  }
 		  },{
 	            xtype: 'datefield',
 	            fieldLabel: '모니터링 기간',
@@ -95,6 +95,10 @@ Ext.define('Study.view.bidinfo.regMointoringSchedule',{
 		      var searchHistoryGrid = me.up('grid[title=검색기록]');
 		      console.log(searchHistoryGrid);
 		   	  //var viewModel = searchHistoryGrid.getViewModel();
+		      
+		      console.log("===========");
+		      console.log(obj.getViewModel());
+		      console.log("===========");
 		    	
 	    	
 			  var instNameTextfield = obj.down('textfield[name=instName]');
@@ -105,7 +109,7 @@ Ext.define('Study.view.bidinfo.regMointoringSchedule',{
 			  console.log(instNameTextfield);
 			  console.log(keywordTextfield);
 		  
-			  
+			   
 	   } 
 	  }] */
 	  
