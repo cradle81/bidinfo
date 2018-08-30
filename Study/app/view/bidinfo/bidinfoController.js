@@ -154,39 +154,28 @@ Ext.define('Study.view.bidinfo.bidinfoController', {
     	
     	//selModel을 찾고
     	var searchHistoryGridSelModel = searchHistoryGrid.getSelectionModel();    	
-    	var selectionSearchHistoryGridSelModel = searchHistoryGridSelModel.getSelection();
     	
-    /*	 var win = this.lookupReference('regMointoringSchedule');
-    	 if (!win) {
-             win = new Study.view.bidinfo.regMointoringSchedule();
-             this.getView().add(win);
-    	 }
-    	 win.show(); */
+    	//선택한 배열이 넘어온다 여기서는 single이기 때문에 선택을 하면 1개의 record가 넘어오고 선택하지 않으면 []이 넘어온다.
+    	var selectionSearchHistoryGridSelModel = searchHistoryGridSelModel.getSelection();  
+
     	
-    	
-		//만약 선택되지 않았다면 표시되지 말아야 한다 
-    	
-    	 var isSelect = !selectionSearchHistoryGridSelModel;
-    	 
-    	 console.log(isSelect);
-    	   
-    	 if (isSelect)
+    	if (selectionSearchHistoryGridSelModel.length != 0)
 		 {
-	    	 var dialog = view.add({
+	    	 this.dialog = view.add({
 	    		 xtype : 'regMointoringSchedule',
 	    		 viewModel : {
 	    			 data : {
-	    				 instName : selectionSearchHistoryGridSelModel[0].get('time'),
+	    				 instName : selectionSearchHistoryGridSelModel[0].get('instName'),
 	    			     keyword : selectionSearchHistoryGridSelModel[0].get('keyword')
 	    			 }
 	    		 },
 	    		 session : true
 	    	 })
-	    	 dialog.show();
+	    	 this.dialog.show();
 		 }
     	 
-    	
-    	
+    	 
+    	 
 
     	//Ext.widget('regMointoringSchedule');
     	  /*Ext.create({
@@ -196,7 +185,7 @@ Ext.define('Study.view.bidinfo.bidinfoController', {
     actionRegMonitoringSchedule: function(btn){
     	//KitchenSink.toast('Button Click','You clicked the "{0}" button.', btn.displayText || btn.text);
     	//gird를 찾고
-    	var me = this; 
+   /* 	var me = this; 
     	var view = me.getView('regMointoringSchedule');
     	var view2 = me.getView('bidinfoList');
     	console.log(view.getViewModel()); 
@@ -205,8 +194,50 @@ Ext.define('Study.view.bidinfo.bidinfoController', {
     	console.log(searchHistoryGrid);
 //    	var viewModel = searchHistoryGrid.getViewModel();
     	console.log(viewModel.get("instName"));
-    	console.log(viewModel.get("keyword"));
+    	console.log(viewModel.get("keyword"));*/
     	
+    	
+    	
+    	 var me = this;
+    	 var fieldset = me.lookupReference('regMonfieldSet-ref');
+    	 var selector = me.lookupReference('regMonMulSelctor-ref');
+    	 var store = selector.getStore();
+    	 var data = store.getData();
+    	 
+    	 console.log(store);
+    	 console.log(data); 
+    	 
+    	 var emails = [];
+    	 store.each(function(record) {
+    		 emails.push(record.get('email'));
+    	 },this);
+         console.log(emails);
+         
+         var jsonData = Ext.encode(Ext.pluck(store.data.items, 'data')); 
+         console.log(jsonData);
+
+     	 
+      	Ext.Ajax.request({
+     		url : 'http://localhost:8080/tta/bidinfo/regSchedule.do',
+	 		method : 'POST',
+	 		jsonData: {
+	 			data: jsonData
+            },
+
+	 		success : function(res){
+	 			var result = Ext.decode(res.responseText);
+	 			console.log(result);
+	 			if (result['Code']==200){ 
+	 			    				
+	 			}
+	 		} 
+ 		  
+ 	    })         
+ 		                
+          
+         //console.log(store); 
+       //  var multiselector = regform.down('multiselector');
+       //  console.log(multiselector); 
     	 
     },
     searchHistorycellClick : function(obj, td, cellIndex, record, tr, rowIndex, e, eOpts ){
@@ -244,16 +275,16 @@ Ext.define('Study.view.bidinfo.bidinfoController', {
 		      var searchHistoryGrid = view.down('grid[title=검색기록]');
 		   	  var viewModel = searchHistoryGrid.getViewModel();
 		    	
-	    	
+	    	 
 			  var instNameTextfield = obj.down('textfield[name=instName]');
 			  var keywordTextfield = obj.down('textfield[name=keyword]');
 			  instNameTextfield.setValue(viewModel.get('instName'));
 			  keywordTextfield.setValue(viewModel.get('keyword'));
 			  
 			  console.log(instNameTextfield);
-			  console.log(keywordTextfield);
-		  
-			  
+			  console.log(keywordTextfield);		  
 	   }
+	
+		
     
 });

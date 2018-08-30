@@ -1,10 +1,17 @@
-function aWeekAfter(){
-    //put real logic for getting date prior to 3 months here
-	var date = new Date();
-	//date.setMonth(date.getMonth() - 1);
-	date.setDate(date.getDate() + 7);
-	return Ext.Date.format(date,'Y/m/d');   
-} 
+	   function aWeekAfter(){
+		    //put real logic for getting date prior to 3 months here
+			var date = new Date();
+			//date.setMonth(date.getMonth() - 1);
+			date.setDate(date.getDate() + 7);
+			return Ext.Date.format(date,'Y/m/d');   
+		}
+		function aMonthAfter(){
+		    //put real logic for getting date prior to 3 months here
+			var date = new Date();
+			//date.setMonth(date.getMonth() - 1);
+			date.setDate(date.getDate() + 30);
+			return Ext.Date.format(date,'Y/m/d');   
+		}	
 Ext.define('Study.view.bidinfo.regMointoringSchedule',{
 	  //extend: 'Ext.form.Panel',
 	  extend : 'Ext.window.Window', 
@@ -30,6 +37,7 @@ Ext.define('Study.view.bidinfo.regMointoringSchedule',{
 	  items : [{
 		  xtype : 'fieldset',
 		  title : '검색 필터 확인',
+		  reference: 'regMonfieldSet-ref',
 		  defaultType : 'textfield',
 		  defaults : {
 			  anchor : '100%'
@@ -54,14 +62,17 @@ Ext.define('Study.view.bidinfo.regMointoringSchedule',{
 	            name: 'dueDate',
 	        	format: 'Y/m/d',   
 	            allowBlank: false,
-	            maxValue: aWeekAfter() 
+	            value: aWeekAfter(),
+	            maxValue: aMonthAfter()
+	            
 		  }]
 		    
 	  },{
-		  xtype: 'multiselector',
+		    xtype: 'multiselector',
+		    reference: 'regMonMulSelctor-ref',
 	        title: '메일 발송자 선택',
 
-	        fieldName: 'name',
+	        fieldName: 'email',
 	        viewConfig: {
 	            deferEmptyText: false,
 	            emptyText: '메일 발송자가 선택되지 않았습니다.'
@@ -70,9 +81,17 @@ Ext.define('Study.view.bidinfo.regMointoringSchedule',{
 	        	 field: 'name',
 	        	 store : {
 	        		 data: [{
-	        			 name : '김정원'
+	        			 name : '김정원',
+	        			 email : 'jungwon_kim@tta.or.kr'
 	        		 },{
-	        			 name : '이상민'
+	        			 name : '이상민',
+	        			 email : 'minuri33@tta.or.kr'
+	        		 },{
+	        			 name : '유정승',
+	        			 email : 'js.yu@tta.or.kr'
+	        		 },{
+	        			 name : '강지성',
+	        			 email : 'kang.jiseong@tta.or.kr'
 	        		 }]
 	        	 }
 	        }
