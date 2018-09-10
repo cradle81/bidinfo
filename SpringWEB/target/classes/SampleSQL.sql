@@ -1,0 +1,1 @@
+select empno,ename,job,mgr from emp;

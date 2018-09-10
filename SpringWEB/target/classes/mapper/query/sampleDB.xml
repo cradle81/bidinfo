@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<!-- Mapper.java namespace -->
+<mapper namespace="kr.or.tta.jungwon.EmpMapper">
+<!-- Person.java namespace -->
+    <resultMap type="kr.or.tta.jungwon.vo.EmpVO" id="Employee">
+        <id column="ID" property="id"  />
+        <result property="NAME" column="name"/>   
+    </resultMap>
+     
+    <select id="selectAllEmployees" resultMap="Employee">
+        SELECT * FROM EMP 
+    </select>
+    
+    <select id="selectAllEmployees2" resultMap="Employee">
+    	select empno,ename,job,sal from emp
+    </select>
+    
+	<select id="selectEmployee" resultMap="Employee">
+        SELECT * FROM EMP
+        where empno=#{empno}
+    </select>    
+</mapper>
