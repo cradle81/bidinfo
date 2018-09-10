@@ -28,8 +28,8 @@ public class SendMail {
 	   public String keyword ; 
 	   public String to;
 	   
-	   private final String username = "swlab_edu";
-	   private final String password = "!12sqec34!";
+	   private final String username = "xxxxxx";
+	   private final String password = "xxxxxx"; 
 	   
 	   String from ="swlab_edu@tta.or.kr";
 	   String host = "mail.tta.or.kr";
