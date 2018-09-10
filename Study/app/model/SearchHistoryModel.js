@@ -13,7 +13,10 @@ Ext.define('Study.model.SearchHistoryModel', {
     },{
     	name: 'schedule',
     	type: 'boolean'
-    }],
+    },{
+    	name : 'fromDate',
+    	type : 'date'
+    }], 
    
     proxy : {
     	type : 'sessionstorage'

@@ -37,6 +37,7 @@ Ext.define('Study.view.bidinfo.bidinfoController', {
     	var toDate =  Ext.Date.format(viewModel.get("toDate"),'Y/m/d');
     	var instName = viewModel.get("instNm");
     	var keyword = viewModel.get("keyword");
+    	var endDate = viewModel.get("endDate");
     	var searchType = radio.items.get(0).getGroupValue()
     		
     	
@@ -83,7 +84,9 @@ Ext.define('Study.view.bidinfo.bidinfoController', {
     	    	proxy.setExtraParam("toDate", Ext.Date.format(viewModel.get("toDate"),'Y/m/d'));
     	    	proxy.setExtraParam("searchType", radio.items.get(0).getGroupValue());
     	        store.load();    
-    	        searchHistoryStore.add({time: Ext.Date.format(new Date(),'H:i:s') ,instName: instName, keyword: keyword ,searchType : searchType ,schedule : false});
+    	        searchHistoryStore.add({time: Ext.Date.format(new Date(),'H:i:s'), 
+    	        instName: instName, keyword: keyword ,searchType : searchType ,
+    	        schedule : false, fromDate : Ext.Date.format(viewModel.get("fromDate"),'C')}); 
     	}
     	
 
@@ -163,11 +166,25 @@ Ext.define('Study.view.bidinfo.bidinfoController', {
 		 {
 	    	 this.dialog = view.add({
 	    		 xtype : 'regMointoringSchedule',
+	    		 reference : 'regMointoringSchedule-ref',
 	    		 viewModel : {
 	    			 data : {
 	    				 instName : selectionSearchHistoryGridSelModel[0].get('instName'),
-	    			     keyword : selectionSearchHistoryGridSelModel[0].get('keyword')
+	    			     keyword : selectionSearchHistoryGridSelModel[0].get('keyword'),
+	    			     searchType : selectionSearchHistoryGridSelModel[0].get('searchType'),
+	    			     fromDate : selectionSearchHistoryGridSelModel[0].get('fromDate')
+	    			 },
+	    			 formulas : {
+	    				 showType : function(get){
+	    					 var type = get('searchType');
+	    					 
+	    					 if (type =='p')
+	    						 return '사전공고';
+	    					 else
+	    						 return '본공고'; 
+	    				 }
 	    			 }
+	    	 
 	    		 },
 	    		 session : true
 	    	 })
@@ -196,8 +213,6 @@ Ext.define('Study.view.bidinfo.bidinfoController', {
     	console.log(viewModel.get("instName"));
     	console.log(viewModel.get("keyword"));*/
     	
-    	
-    	
     	 var me = this;
     	 var fieldset = me.lookupReference('regMonfieldSet-ref');
     	 var selector = me.lookupReference('regMonMulSelctor-ref');
@@ -207,30 +222,56 @@ Ext.define('Study.view.bidinfo.bidinfoController', {
     	 console.log(store);
     	 console.log(data); 
     	 
-    	 var emails = [];
+    	 var users = [];
     	 store.each(function(record) {
-    		 emails.push(record.get('email'));
+    		 var user = new Object();
+    		 user.name = record.get('name');
+    		 user.email = record.get('email');
+    		 users.push(user);
+//    		 emails.push(record.get('email'));
     	 },this);
-         console.log(emails);
-         
-         var jsonData = Ext.encode(Ext.pluck(store.data.items, 'data')); 
-         console.log(jsonData);
+         // data.getValues('email','data');
+    	 
+         var keyword = fieldset.down('textfield[name=keyword]').getValue();
+         var instName = fieldset.down('textfield[name=instName]').getValue();
+         var endDate = fieldset.down('datefield').getValue();
+         var searchType = fieldset.down('textfield[name=searchType]').getValue();
+         var fromDate = fieldset.down('textfield[name=fromDate]').getValue();
 
-     	 
-      	Ext.Ajax.request({
+         
+         var MonInfo = new Object();
+         MonInfo.keyword = keyword; 
+         MonInfo.instName = instName;
+         MonInfo.users= users;
+         MonInfo.endDate=Ext.Date.format(endDate,'C'); 
+         MonInfo.fromDate=fromDate;
+         MonInfo.searchType=searchType;
+         
+
+        
+        // var jsonData = Ext.encode(Ext.pluck(store.data.items, 'data')); 
+         var jsonData = Ext.JSON.encode(MonInfo);
+         console.log(jsonData);   
+
+         var view = me.getView(); 
+      	Ext.Ajax.request({ 
      		url : 'http://localhost:8080/tta/bidinfo/regSchedule.do',
 	 		method : 'POST',
-	 		jsonData: {
-	 			data: jsonData
-            },
-
+	 		jsonData: jsonData, 
 	 		success : function(res){
-	 			var result = Ext.decode(res.responseText);
-	 			console.log(result);
-	 			if (result['Code']==200){ 
-	 			    				
-	 			}
-	 		} 
+	 			    Ext.Msg.alert("정보", "정상처리되었습니다.");
+	 				view.destroy(); 
+	 				/*Ext.Msg.alert("정보", "정상처리되었습니다.");	 		    	
+	 		    	var view = me.getView(); 	 				
+	 				var ref = view.lookupReference('regMointoringSchedule-ref');
+	 				console.log(ref);*/	 		
+	 		}, 
+	 		failure: function(response, opts) {
+	 	        console.log('server-side failure with status code ' + response.status);
+	 	        Ext.Msg.alert("정보", "오류가 발생하셨습니다.");
+	 			
+	 			view.destroy(); 
+	 	     }
  		  
  	    })         
  		                

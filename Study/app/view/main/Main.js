@@ -111,8 +111,20 @@ Ext.define('Study.view.main.Main', {
     					text : '입찰공고모니터링',
     					iconCls: 'x-fa fa-eye',
     					page : 'bidinfoList',
-    					leaf : true
-    						
+    					children : [{
+    						text : '검색 및 스케줄 등록',
+    						page : 'bidinfoList',
+    						iconCls : 'x-fa fa-list-alt', 
+    						leaf : true    							    							
+    					},{
+    						text : '스케줄 확인 및 삭제',
+    						iconCls : 'x-fa fa-calendar',
+    						page : 'bidinfoSelectDeleteView',
+    						leaf : true
+    							
+    					}],
+    					expanded : true
+    						 
     				},{
     					text : '장비현황',
     					iconCls: 'x-fa fa-laptop',

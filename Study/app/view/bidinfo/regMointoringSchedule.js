@@ -3,14 +3,17 @@
 			var date = new Date();
 			//date.setMonth(date.getMonth() - 1);
 			date.setDate(date.getDate() + 7);
-			return Ext.Date.format(date,'Y/m/d');   
+			return date;
+			//return Ext.Date.format(date,'C');   
 		}
 		function aMonthAfter(){
 		    //put real logic for getting date prior to 3 months here
 			var date = new Date();
 			//date.setMonth(date.getMonth() - 1);
 			date.setDate(date.getDate() + 30);
-			return Ext.Date.format(date,'Y/m/d');   
+			
+			return date;
+			//return Ext.Date.format(date,'C');   
 		}	
 Ext.define('Study.view.bidinfo.regMointoringSchedule',{
 	  //extend: 'Ext.form.Panel',
@@ -54,17 +57,37 @@ Ext.define('Study.view.bidinfo.regMointoringSchedule',{
 			  fieldLabel: '키워드', 
 			  name: 'keyword', 
 			  bind : {
-				  value : '{keyword}'
+				  value : '{keyword}' 
 			  }
 		  },{
+			  allowBlank:false,  
+			  fieldLabel: '검색타입', 
+			  name: 'showType', 
+			  bind : {
+				  value : '{showType}'
+			  }
+		  },{
+			  name: 'searchType', 
+			  bind : {
+				  value : '{searchType}'
+			  },
+			  hidden: true 
+		  	
+		  },{ 
 	            xtype: 'datefield',
 	            fieldLabel: '모니터링 기간',
 	            name: 'dueDate',
-	        	format: 'Y/m/d',   
 	            allowBlank: false,
-	            value: aWeekAfter(),
+	            format: 'Y/m/d',
+	            value: aWeekAfter(), 
 	            maxValue: aMonthAfter()
 	            
+		  },{
+			  name: 'fromDate',
+			  bind :{
+				  value : '{fromDate}'
+			  },
+			  hidden : true
 		  }]
 		    
 	  },{
