@@ -1,6 +1,7 @@
 package kr.or.tta.bidinfo.mail;
 
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,7 +14,7 @@ import kr.or.tta.HomeController;
 import kr.or.tta.jungwon.vo.MonInfo;
 
 public class MailMonManager {
-	HashMap <String, MailMonitorThread> list = new HashMap<String, MailMonitorThread>();
+	static HashMap <String, MailMonitorThread> list = new HashMap<String, MailMonitorThread>();
 	private static final Logger logger = LoggerFactory.getLogger(MailMonManager.class);
 	
 	public void add(String threadName, MailMonitorThread t)
@@ -22,13 +23,12 @@ public class MailMonManager {
 		list.put(threadName,t);
 
 	}
-	public void delete(String threadName)
+	public static void delete(String threadName)
 	{
-		Thread t = list.get(threadName);
-		
+		Thread t = list.get(threadName);		
 		list.remove(threadName);
 		
-		
+		 
 		//스레드 정보 확인
 		//해당 스레드 킬
 		t.interrupt();
@@ -56,11 +56,19 @@ public class MailMonManager {
 			item.put("threadName", t.getName());
 			item.put("instName", monInfo.getInstName()); 
 			item.put("keyword", monInfo.getKeyword());
+			if (monInfo.getSearchType().equals("p"))
+			{
+				item.put("searchType","사전공고");
+			}
+			else if (monInfo.getSearchType().equals("t"))
+			{
+				item.put("searchType","본공고");
+			}
 			item.put("endDate", endDate);
 			item.put("emails", monInfo.getNameList());
 			
 			logger.info("ThreadName = {}, instName={}",t.getName(),monInfo.getInstName());			
-			logger.info("keyword = {} , endDate ={}", endDate) ;
+			logger.info("keyword = {} , endDate ={}", monInfo.getKeyword(), endDate) ;
 			logger.info("names ={}", monInfo.getNameList()) ;
 			jsonArrayRows.add(item);
  
@@ -71,6 +79,9 @@ public class MailMonManager {
 	public void runMon(MonInfo mon)
 	{
 		 MailMonitorThread t= new MailMonitorThread(mon);
+		 SimpleDateFormat sdf = new SimpleDateFormat("yyyyMdHms"); 
+		 String time = sdf.format(new Date());
+		 t.setName(time+"-"+"MainMonThread");
 		 t.start();		 		 
 		 this.add(t.getName(),t);		
 	}

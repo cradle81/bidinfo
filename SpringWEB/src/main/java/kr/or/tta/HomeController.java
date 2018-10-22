@@ -1,15 +1,19 @@
 package kr.or.tta;
 
 import java.text.DateFormat;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
 import org.apache.ibatis.javassist.bytecode.Descriptor.Iterator;
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,6 +24,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import kr.or.tta.bidinfo.URLConnection;
 import kr.or.tta.bidinfo.mail.MailMonManager;
+import kr.or.tta.jungwon.service.BMTUserService;
+import kr.or.tta.jungwon.service.EmpSerivce;
+import kr.or.tta.jungwon.service.MachineService;
 import kr.or.tta.jungwon.vo.*;
 
 /**
@@ -32,7 +39,11 @@ public class HomeController {
 	
 	private MailMonManager mailManger = new MailMonManager();
 	
+	@Autowired
+    BMTUserService bmtService;
 	
+	@Autowired
+    MachineService machineService;
 	
 	
 	/**
@@ -112,4 +123,84 @@ public class HomeController {
 		mailManger.delete(threadName);
 		return resObj;
 	}
+	
+	@RequestMapping(value = "getBMTUserList.do", method = RequestMethod.POST)
+	public JSONObject getBMTUserList(@RequestParam(required = false) Map param, Locale locale) {
+		List<BMTUser> bmtUsers = bmtService.selectAllBMTUser();
+		JSONObject resObj = new JSONObject();			
+		JSONArray jsonArrayRows = new JSONArray();		
+				
+		for (BMTUser user : bmtUsers)
+		{			
+	    	JSONObject item = new JSONObject();
+	    	
+	    	item.put("name", user.getName());  
+	    	item.put("email", user.getEmail());
+
+	    	 
+	    	jsonArrayRows.add(item);
+		}
+		
+		resObj.put("data", jsonArrayRows);
+		logger.info(resObj.toJSONString());
+					
+		return resObj;
+	}	
+	
+	@RequestMapping(value = "getMacineInfoList.do", method = RequestMethod.POST)
+	public JSONObject getMacineInfoList(@RequestParam(required = false) Map param, Locale locale)
+	{
+		
+		List<String> list = new ArrayList();
+		list.add((String)param.get("x86"));
+		list.add((String)param.get("power"));
+		list.add((String)param.get("sparc"));
+		list.add((String)param.get("itanium"));
+
+		
+		
+		List<Machine> machineList;
+		machineList = machineService.selectTypeMachines(list);
+		
+		
+		/*
+		if (type.equals("" ) || type == null)
+		{
+			machineList = machineService.selectAllMachines();
+		}
+		else
+		{*/ 
+			
+			 machineList = machineService.selectTypeMachines(list);			
+		/*}*/
+		
+		//
+		
+		JSONObject resObj = new JSONObject();			
+		JSONArray jsonArrayRows = new JSONArray();		
+		for (Machine machine : machineList)
+		{			
+	    	JSONObject item = new JSONObject();
+	    	
+	    	item.put("svrname", machine.getSvrname());  
+	    	item.put("cpu", machine.getCpu());
+	    	item.put("model",machine.getModel());
+	    	item.put("cpu_p",machine.getCpu_p());
+	    	item.put("cpu_t",machine.getCpu_t());
+	    	item.put("cpu_c",machine.getCpu_c());
+	    	item.put("mem",machine.getMem());
+	    	item.put("cpu_type",machine.getCpu_type());
+	    	item.put("isEnable",machine.isEnable());
+
+	    	 
+	    	jsonArrayRows.add(item);
+		}
+		
+		resObj.put("data", jsonArrayRows);
+		logger.info(resObj.toJSONString());
+					
+		return resObj;
+	}	
+	
+	
 }

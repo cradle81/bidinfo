@@ -2,6 +2,7 @@ package kr.or.tta.bidinfo.mail;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Iterator;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -18,7 +19,7 @@ public class MailMonitorThread extends Thread{
 
     final int interval = 60000;
     
-    int updateCnt=0;
+    int currentCnt=0;
     
     Date endDate;
     
@@ -61,51 +62,72 @@ public class MailMonitorThread extends Thread{
 	    URLConnection url = new URLConnection();		
 	    boolean isSendMail=false;	    	   
 	    JSONObject res;
-	    res= url.getPreStdPublishList(fromDate, toDate, instName, keyword);
 	    
-	    //초기 카운트 업데이트함
-	    updateCnt = res.size();
+	    logger.info("SerachType={}",mon.getSearchType());
+	    if (mon.getSearchType().equals("t"))
+	    {
+	    	
+	    	res= url.getTbidListURL(fromDate, toDate, instName, keyword);
+	    }
+	    else 
+	    {
+	    	res= url.getPreStdPublishList(fromDate, toDate, instName, keyword);
+	    }
+	    
+	    
+	    
+	    //초기 카운트 업데이트함	    
+	    currentCnt = ((JSONArray)res.get("data")).size();    	    
+	    logger.info("today={}",new Date());
+	    logger.info("endDate={}",endDate);
+	    
 	    
 		while(true) //endDate까지 running해야 함
 		{
+		
+			// 모니터링 기한이 만료되면 현재 스레드를 리스트상에 없애고 interrupt 시켜버린다.
+			if(endDate.before(new Date()))
+			{
+				MailMonManager.delete(this.currentThread().getName());
+			}
 	 
 			// Thread으로 대기하면서 조정 
 			 try {
 				    				   			 				   
 				    toDate = this.updateToday();
-				    res= url.getPreStdPublishList(fromDate, toDate, instName, keyword);
+				    if (mon.getSearchType().equals("t"))
+				    {
+				    	
+				    	res= url.getTbidListURL(fromDate, toDate, instName, keyword);
+				    }
+				    else 
+				    {
+				    	res= url.getPreStdPublishList(fromDate, toDate, instName, keyword);
+				    }		 	    
+				    JSONArray items = (JSONArray) res.get("data");
+				    int newCnt = items.size();
+				     
 				    				    
 				    logger.info(res.toJSONString());				    
-				    logger.info("current new count is ==> {} ", updateCnt);
-					if(Math.max(updateCnt, res.size()) > updateCnt )  //비교를 사이즈로 하는 것이 아니라, 시간을 가지고 체크를 해야 하지 않을까 함.//왜냐하면 시간이 지나면서 기존 엘레먼트들이 삭제될 수 있기에, 리스크 개수로 비교하게 되면 오차가 발생할 수 잇따.
+				    logger.info("current res count is ==> {} ", currentCnt);
+				    logger.info("new     res count is ==> {} ", newCnt);
+					if(Math.max(currentCnt, newCnt) > currentCnt )  //비교를 사이즈로 하는 것이 아니라, 시간을 가지고 체크를 해야 하지 않을까 함.//왜냐하면 시간이 지나면서 기존 엘레먼트들이 삭제될 수 있기에, 리스크 개수로 비교하게 되면 오차가 발생할 수 잇따.
 					 {
 						 isSendMail = true;
-						 updateCnt = res.size();
-					 }
-					 
-					 // 임시로 메일보내지 말기
-					 isSendMail = true;
-					 
-					 logger.info("isSendMail="+isSendMail);	
+						 logger.info("update current res count : {} => {} ", currentCnt, newCnt);
+						 currentCnt = newCnt;
+					 }					 
+					 	
 					 
 					 //메일보내기
+					logger.info("isSendMail={}",isSendMail);
 					 if (isSendMail)
 					 {						 
 						 SendMail se = new SendMail(res,this.getMonInfo());
 						 se.sendMail();
 						 isSendMail = false;
 					 }
-					 				 
-				    System.out.println("===============================");
-					System.out.println("running");
-					System.out.println("isSendMail="+isSendMail);
-					System.out.println("newCnt="+res.size());
-					System.out.println("currnetCnt="+res.size());
-					System.out.println("keyworkd="+ keyword);
-					System.out.println("발주기관="+ instName);
-					System.out.println("===============================");
-					
-					
+					 
 					 Thread.sleep(interval);	
 	
 			}

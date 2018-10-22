@@ -23,7 +23,7 @@
 	
 	<!-- Application Loggers -->
 	<logger name="kr.or.tta">
-		<level value="debug" />
+		<level value="info" />
 	</logger>
 	
 	<!-- 3rdparty Loggers -->
@@ -43,7 +43,7 @@
 		<level value="info" />
 	</logger>
 	
-	<!-- log4jdbc -->
+	<!-- log4jdbc --> 
     <logger name="jdbc">
 		<level value="OFF" />
 	</logger>	

@@ -6,7 +6,7 @@
 <!-- Person.java namespace -->
     <resultMap type="kr.or.tta.jungwon.vo.EmpVO" id="Employee">
         <id column="ID" property="id"  />
-        <result property="NAME" column="name"/>   
+        <result property="NAME" column="name"/>    
     </resultMap>
      
     <select id="selectAllEmployees" resultMap="Employee">
