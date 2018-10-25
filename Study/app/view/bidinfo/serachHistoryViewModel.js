@@ -4,15 +4,14 @@
 Ext.define('Study.view.bindinfo.searchHistoryViewModel', {
     extend: 'Ext.app.ViewModel',
     alias: 'viewmodel.searchHistoryViewModel', 
-    data : {
-    	instName : '기',
-    	keyword : '본'	
-    },
     stores : {
     	searchHistoryStore : {
     		type : 'searchHistoryStore'
-    	}	   
-    }
+    	},
+    	bmtuserlistStore : {
+    		type: 'bmtuserlist'
+    	}
+    } 
     //TODO - add data, formulas and/or methods to support your view
 });
   

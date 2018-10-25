@@ -14,7 +14,6 @@ Ext.define('Study.view.bidinfoSelectDelete.bidinfoSelectDeleteController', {
     	var view = me.getView();
     	var viewModel = me.getViewModel();
     	var store = viewModel.getStore('scheduleList');
-    	console.log(store);
     	store.load(); 
     },
     setGridHeight : function(obj){
@@ -43,20 +42,14 @@ Ext.define('Study.view.bidinfoSelectDelete.bidinfoSelectDeleteController', {
 				console.log(threadName);
 				
 		     	Ext.Ajax.request({ 
-		     		url : 'http://localhost:8080/tta/bidinfo/delSchedule.do',
+		     		url : Ext.manifest.api_url+'/tta/bidinfo/delSchedule.do',
 			 		method : 'POST',
 			 		params:  {
 			 			threadName : threadName 
 			 		},
 			 		success : function(res){
 			 			    Ext.Msg.alert("정보", "정상처리되었습니다. - "+threadName);
-			 				// 로드가 정상적으로 되지 않음.
-			 				console.log(store);
-			 				store.load({
-			 					callback : function(data){
-			 						console.log(data);
-			 					}
-			 				}); 	 		 			    
+			 				store.load(); 	 		 			    
 	 		
 			 		}, 
 			 		failure: function(response, opts) {			 	        
@@ -64,7 +57,7 @@ Ext.define('Study.view.bidinfoSelectDelete.bidinfoSelectDeleteController', {
 			 	     }
 		 		   
 		 	    })
-			} 
+			}  
 		},this);
 		
 		

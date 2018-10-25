@@ -8,8 +8,7 @@ Ext.define('Study.store.SearchHistoryStore', {
     	direction : 'DESC',
     	property : 'time' 
     }
-
- 
+  
    // model : 'Study.model.searchHistoryModel',     
    // viewModel: 'bidinfoList', 
 

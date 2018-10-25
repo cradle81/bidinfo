@@ -113,7 +113,7 @@ Ext.define('Study.view.bidinfo.bidinfoList', {
 	      padding: 5,
 	     
 	      layout: {
-	            type: 'hbox',
+	            type: 'hbox'
 	      },
 	       items : [{
 	    	    xtype : 'grid',
@@ -183,22 +183,14 @@ Ext.define('Study.view.bidinfo.bidinfoList', {
 		       	title : '검색기록',
 		        reference : 'searchGrid-ref', 
 		       	height : 450,
-		        flex: 1,
+		       	flex: 1,
+		       	layout : 'fit',
 		        viewModel : 'searchHistoryViewModel',
 		        selModel: {
 		            type: 'checkboxmodel',
-		            mode : 'SINGLE',		            
-		        }, 
-		       	tbar :{
-		       		xtype : 'button',
-		       		text: '스케줄등록',
-		       		width : 150,
-		       		layout : {
-		       			align : 'middle',
-		       			pack : 'center'
-		       		},
-		       		handler : 'regMointoringSchedule'
-		       	},
+		            mode : 'SINGLE'		            
+		        }, 		        
+
 		       	columns : [{
 		       		text : '검색시간',
 		       		flex : 1,
@@ -215,7 +207,7 @@ Ext.define('Study.view.bidinfo.bidinfoList', {
 		       	},{
 		       		text : '검색타입',
 		       		flex : 1,
-		       	    dataIndex: 'searchType'
+		       	    dataIndex: 'showType'
 		       	}/*,{
 		            xtype: 'checkcolumn',
 		            header: '등록',
@@ -231,7 +223,22 @@ Ext.define('Study.view.bidinfo.bidinfoList', {
 		       	},
 		       	listeners: {
 		       		cellclick: 'searchHistorycellClick'       		
-		       	}
+		       	},
+		       	tbar :[{
+		       		xtype : 'button',
+		       		text: '스케줄등록',
+		       		width : '40%',
+		       		layout : {
+		       			align : 'middle',
+		       			pack : 'center' 
+		       		}, 
+		       		width : 150,
+		       		layout : {
+		       			align : 'middle',
+		       			pack : 'center'
+		       		},
+		       		handler : 'regMointoringSchedule'
+		       	}]
 
 	       }] 
          }]

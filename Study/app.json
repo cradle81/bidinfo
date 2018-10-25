@@ -313,7 +313,9 @@
         },
         "compressor": {
             "type": "yui"
-        }
+        },
+        "api_url": "http://ttabmt.net"
+        
     },
     
     /**
@@ -328,7 +330,8 @@
     "development": {
         "watch": {
             "delay": 250
-        }
+        },
+        "api_url": "http://localhost:8080"
     },
 
     /**

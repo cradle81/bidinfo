@@ -41,6 +41,11 @@ Ext.define('Study.view.bidinfoSelectDelete.bidinfoSelectDeleteView', {
 			flex : 1,
 			dataIndex : 'keyword' 
 		},{
+			text : '검색타입', 
+			flex : 1,
+			dataIndex : 'searchType'  
+			
+		},{
 			text : '모니터링 기한',
 			flex : 1,
 			dataIndex : 'endDate'
@@ -55,7 +60,7 @@ Ext.define('Study.view.bidinfoSelectDelete.bidinfoSelectDeleteView', {
        		widget : {
        			xtype : 'button',
            		name : 'deleteButton',
-           		text : '삭제진행',
+           		text : '삭제', 
            		handler : 'actionDelete'    		
        		}			
 		}],

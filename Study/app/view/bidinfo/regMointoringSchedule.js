@@ -15,6 +15,11 @@
 			return date;
 			//return Ext.Date.format(date,'C');   
 		}	
+		function debugDate(){
+			var date = new Date();
+			date.setMinutes(date.getMinutes()+5);
+			return date;  
+		}
 Ext.define('Study.view.bidinfo.regMointoringSchedule',{
 	  //extend: 'Ext.form.Panel',
 	  extend : 'Ext.window.Window', 
@@ -64,7 +69,7 @@ Ext.define('Study.view.bidinfo.regMointoringSchedule',{
 			  fieldLabel: '검색타입', 
 			  name: 'showType', 
 			  bind : {
-				  value : '{showType}'
+				  value : '{showType}' 
 			  }
 		  },{
 			  name: 'searchType', 
@@ -76,10 +81,11 @@ Ext.define('Study.view.bidinfo.regMointoringSchedule',{
 		  },{ 
 	            xtype: 'datefield',
 	            fieldLabel: '모니터링 기간',
-	            name: 'dueDate',
+	            name: 'dueDate', 
 	            allowBlank: false,
 	            format: 'Y/m/d',
-	            value: aWeekAfter(), 
+	            value: aWeekAfter(),
+	            //value: debugDate(),
 	            maxValue: aMonthAfter()
 	            
 		  },{
@@ -100,60 +106,43 @@ Ext.define('Study.view.bidinfo.regMointoringSchedule',{
 	            deferEmptyText: false,
 	            emptyText: '메일 발송자가 선택되지 않았습니다.'
 	        },
-	        search: {
-	        	 field: 'name',
+/*        	bind: {
+        		store : '{bmtuserlist}'
+        	}
+      */
+/*	        store: {
+	            type: 'bmtuserlist' 
+	        }*/
+	        
+	        // bind store으로 하면 안된다 아래와  같이 직접 접근해야 한다.
+	        //그렇지 않으면 autoload ture인 경우 모두 메일이사용자가 선택이되고
+	        //autoload false인 경우는 로드 자체가 안된다. 뭐 이벤트를 줘서 로딩하게 할 수 있을 것 같긴 하지만;;;
+	        search: { 
+	        	 field: 'name',	        	
 	        	 store : {
-	        		 data: [{
-	        			 name : '김정원',
-	        			 email : 'jungwon_kim@tta.or.kr'
-	        		 },{
-	        			 name : '이상민',
-	        			 email : 'minuri33@tta.or.kr'
-	        		 },{
-	        			 name : '유정승',
-	        			 email : 'js.yu@tta.or.kr'
-	        		 },{
-	        			 name : '강지성',
-	        			 email : 'kang.jiseong@tta.or.kr'
-	        		 }]
+	        		 sorters: 'name',
+	        		 proxy: {
+	        			 type : 'ajax',
+	        			 actionMethods :{
+	        				 read : 'POST'  
+	        			 },
+	        			 url : Ext.manifest.api_url+'/tta/bidinfo/getBMTUserList.do',		 
+	        			 reader: {
+	        				 type : 'json',
+	        				 rootProperty : 'data'
+	        			 } 
+	        		 }
 	        	 }
 	        }
-	  }],
-	          
+
+	        
+	  }],	         
 	  buttons : [{
 		  text : '확인',
 		  formBind : true,
 		  //handler : 'actionRegMonitoringSchedule'
 		  handler : 'actionRegMonitoringSchedule'
-	  }]/*,
-
-	  listeners : [{
-		  boxready  : function(obj,eOpts){	
-		    	//gird를 찾고
-		      var me = this;
-		      
-		      console.log(me);
-		      console.log(obj);	
-		      var searchHistoryGrid = me.up('grid[title=검색기록]');
-		      console.log(searchHistoryGrid);
-		   	  //var viewModel = searchHistoryGrid.getViewModel();
-		      
-		      console.log("===========");
-		      console.log(obj.getViewModel());
-		      console.log("===========");
-		    	
-	    	
-			  var instNameTextfield = obj.down('textfield[name=instName]');
-			  var keywordTextfield = obj.down('textfield[name=keyword]');
-			  instNameTextfield.setValue(viewModel.get('instName'));
-			  keywordTextfield.setValue(viewModel.get('keyword'));
-			  
-			  console.log(instNameTextfield);
-			  console.log(keywordTextfield);
-		  
-			   
-	   } 
-	  }] */
+	  }]
 	  
 	   
 });  

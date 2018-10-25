@@ -66,7 +66,7 @@ Ext.define('Study.view.bidinfo.bidinfoController', {
     			toDate : Ext.Date.format(viewModel.get("toDate"),'Y/m/d') 
 
     	}
-    	store.load({
+    	store.load({ 
 		params : params
 	    }); */
     	    	
@@ -84,8 +84,17 @@ Ext.define('Study.view.bidinfo.bidinfoController', {
     	    	proxy.setExtraParam("toDate", Ext.Date.format(viewModel.get("toDate"),'Y/m/d'));
     	    	proxy.setExtraParam("searchType", radio.items.get(0).getGroupValue());
     	        store.load();    
+    	        
+   			  
+				var showType=''; 
+			    if (searchType =='p')
+			    	showType='사전공고';
+				else
+					showType='본공고';  
+				
+			 
     	        searchHistoryStore.add({time: Ext.Date.format(new Date(),'H:i:s'), 
-    	        instName: instName, keyword: keyword ,searchType : searchType ,
+    	        instName: instName, keyword: keyword ,searchType : searchType , showType : showType,  
     	        schedule : false, fromDate : Ext.Date.format(viewModel.get("fromDate"),'C')}); 
     	}
     	
@@ -183,13 +192,21 @@ Ext.define('Study.view.bidinfo.bidinfoController', {
 	    					 else
 	    						 return '본공고'; 
 	    				 }
-	    			 }
-	    	 
+	    			 }/*,
+	    			 stores : {
+	    				 bmtuserlist : {
+    			    		type: 'bmtuserlist' 
+    			    	}
+    			    }  */
+	    	   
 	    		 },
 	    		 session : true
 	    	 })
 	    	 this.dialog.show();
 		 }
+    	else{
+    		Ext.Msg.alert("경고","검색히스토리 아이템을 선택하지 않았습니다.");
+    	}
     	 
     	 
     	 
@@ -250,12 +267,12 @@ Ext.define('Study.view.bidinfo.bidinfoController', {
 
         
         // var jsonData = Ext.encode(Ext.pluck(store.data.items, 'data')); 
-         var jsonData = Ext.JSON.encode(MonInfo);
-         console.log(jsonData);   
+        var jsonData = Ext.JSON.encode(MonInfo);
+        console.log(jsonData);   
 
          var view = me.getView(); 
       	Ext.Ajax.request({ 
-     		url : 'http://localhost:8080/tta/bidinfo/regSchedule.do',
+     		url : Ext.manifest.api_url+'/tta/bidinfo/regSchedule.do',
 	 		method : 'POST',
 	 		jsonData: jsonData, 
 	 		success : function(res){

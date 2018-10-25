@@ -21,7 +21,7 @@ Ext.define('Study.view.main.Main', {
     	xtype: 'panel',
     	region: 'north',
     	split : {
-    		size:5,
+    		size:5
     	},    	
     	header : {       		
     		title : {
@@ -128,7 +128,12 @@ Ext.define('Study.view.main.Main', {
     				},{
     					text : '장비현황',
     					iconCls: 'x-fa fa-laptop',
-    					page : 'machineinfoList',
+    					page : 'machineInfoList',
+    					leaf : true
+    				},{
+    					text : '테스트',
+    					iconCls: 'x-fa fa-laptop',
+    					page : 'testList',
     					leaf : true
     				}]
     			}

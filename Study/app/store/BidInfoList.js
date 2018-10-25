@@ -46,8 +46,8 @@ Ext.define('Study.store.BidInfoList', {
 			 read : 'GET'
 		 },
 		 //url : '/tta/test/json.do',
-		 url : 'http://localhost:8080/tta/bidinfo/bidinfoList.do',		 
-		 reader: {
+		 url : Ext.manifest.api_url+'/tta/bidinfo/bidinfoList.do',		 
+		 reader: { 
 			 type : 'json',
 			 rootProperty : 'data',
 			 totalProperty : 'tatalCount'
