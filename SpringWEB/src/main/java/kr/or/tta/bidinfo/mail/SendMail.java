@@ -28,11 +28,11 @@ public class SendMail {
 	   public String keyword ; 
 	   public String to;
 	   
-	   private final String username = "swlab_edu";
-	   private final String password = "!12sqec34!";
+	   private final String username = "jungwon";
+	   private final String password = "jungwon";
 	   
-	   String from ="swlab_edu@tta.or.kr";
-	   String host = "mail.tta.or.kr";
+	   String from ="jungwon@localhost";
+	   String host = "localhost";
 	   
 	   
 	   private static final Logger logger = LoggerFactory.getLogger(SendMail.class);
@@ -49,15 +49,16 @@ public class SendMail {
 
 	   
 		
-	   public void sendMail(){
-		   
-		   
-	    	  
+	   public void sendMail() throws Exception{
+		   		    
 		   Properties props = new Properties();
 		      props.put("mail.smtp.host", host);
 		      props.put("mail.smtp.socketFactory.port", "25");
 		      props.put("mail.smtp.socketFactory.class","javax.net.ssl.SSLSocketFactory");
-		      props.put("mail.smtp.auth", "true");
+		      
+		      //true localhost 
+		      //mail전송 시 오류 발생 java.lang.Exception: javax.mail.AuthenticationFailedException: 535 5.7.0 authentication failed
+		      props.put("mail.smtp.auth", "false");
 		      props.put("mail.smtp.port", "25");
 		      
 		      String subject="[입찰공고모니터링시스템]["+instName+"]"+"["+keyword+"]알림메일"; //[공고명][발주기관][키워드] 
@@ -141,7 +142,8 @@ public class SendMail {
 		   System.out.println("Sent message successfully....");
 
 	      } catch (MessagingException e) {
-	         throw new RuntimeException(e);
+	    	 
+	         throw new Exception(e);
 	      }
 	   }
 }

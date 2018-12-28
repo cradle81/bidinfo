@@ -15,7 +15,7 @@ public  class BMTUser {
 	public String remark;
 	public String phone1;
 	public String phone2;
-	public String state;
+	public String state; 
 	
 	private String getId() {
 		return id;

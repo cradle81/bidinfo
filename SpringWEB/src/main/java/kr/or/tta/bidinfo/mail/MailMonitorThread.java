@@ -108,7 +108,7 @@ public class MailMonitorThread extends Thread{
 				    int newCnt = items.size();
 				     
 				    				    
-				    logger.info(res.toJSONString());				    
+				    logger.debug(res.toJSONString());				    
 				    logger.info("current res count is ==> {} ", currentCnt);
 				    logger.info("new     res count is ==> {} ", newCnt);
 					if(Math.max(currentCnt, newCnt) > currentCnt )  //비교를 사이즈로 하는 것이 아니라, 시간을 가지고 체크를 해야 하지 않을까 함.//왜냐하면 시간이 지나면서 기존 엘레먼트들이 삭제될 수 있기에, 리스크 개수로 비교하게 되면 오차가 발생할 수 잇따.
@@ -126,8 +126,9 @@ public class MailMonitorThread extends Thread{
 						 SendMail se = new SendMail(res,this.getMonInfo());
 						 se.sendMail();
 						 isSendMail = false;
+						 logger.info("3");
 					 }
-					 
+					 logger.info("4");
 					 Thread.sleep(interval);	
 	
 			}
