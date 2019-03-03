@@ -135,6 +135,11 @@ Ext.define('Study.view.main.Main', {
     					iconCls: 'x-fa fa-laptop',
     					page : 'testList',
     					leaf : true
+    				},{
+    					text : '자가진단표',
+    					iconCls: 'x-fa fa-laptop',
+    					page : 'selfTest',
+    					leaf : true
     				}]
     			}
     			

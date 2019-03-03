@@ -1,2 +1,2 @@
 // @tag full-page
-// @require C:\Sencha\git\Study\app.js
+// @require C:\Users\jungwon\git\bidinfo\Study\app.js
